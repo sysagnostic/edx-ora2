@@ -2,23 +2,19 @@
 # edX translation file
 # Copyright (C) 2018 edX
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2018.
 # 
 # Translators:
-# Andy Armstrong <andya@edx.org>, 2015
-# Jirayu Chamamahattana <mman2x@gmail.com>, 2015
-# Noppachai Eiamwasant <noporo@hotmail.com>, 2015
-# Noppadol Choti <noppadol@thaicyberu.go.th>, 2019
-# ormbook ohno <ormbook@gmail.com>, 2016
-# Sira Nokyoongtong <gumaraa@gmail.com>, 2014
-# Sorathan Chaturapruek <tummykung@gmail.com>, 2015
+# Brian Smith, 2025
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: edx-platform\n"
+"Project-Id-Version: edx-ora2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 18:37+0000\n"
-"PO-Revision-Date: 2014-06-11 13:03+0000\n"
-"Last-Translator: Noppadol Choti <noppadol@thaicyberu.go.th>, 2019\n"
-"Language-Team: Thai (http://app.transifex.com/open-edx/edx-platform/language/th/)\n"
+"POT-Creation-Date: 2025-10-30 00:45+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Thai (https://app.transifex.com/open-edx/teams/6205/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,7 +41,9 @@ msgstr "ตัวอย่าง {example_number} มีข้อผิดพล
 msgid ""
 "Example {example_number} has an invalid option for \"{criterion_name}\": "
 "\"{option_name}\""
-msgstr "ตัวอย่าง {example_number} มีตัวเลือกไม่ถูกต้องสำหรับ \"{criterion_name}\": \"{option_name}\""
+msgstr ""
+"ตัวอย่าง {example_number} มีตัวเลือกไม่ถูกต้องสำหรับ \"{criterion_name}\": "
+"\"{option_name}\""
 
 #: assessment/api/student_training.py:227
 #, python-brace-format
@@ -57,98 +55,119 @@ msgstr "ตัวอย่าง {example_number} มีตัวเลือก
 msgid "Example {example_number} is missing an option for \"{criterion_name}\""
 msgstr "ตัวอย่าง {example_number} ขาดตัวเลือกสำหรับ \"{criterion_name}\""
 
-#: data.py:534
+#: assessment/score_type_constants.py:21 xblock/grade_mixin.py:547
+msgid "Peer"
+msgstr "เพื่อน"
+
+#: assessment/score_type_constants.py:22
+msgid "Self"
+msgstr ""
+
+#: assessment/score_type_constants.py:23
+msgid "Staff"
+msgstr ""
+
+#: assessment/score_type_constants.py:25
+msgid "Unknown"
+msgstr ""
+
+#: data.py:584
 #, python-brace-format
 msgid "Criterion {number}: {label}"
 msgstr ""
 
-#: data.py:536
+#: data.py:586
 #, python-brace-format
 msgid "Points {number}"
 msgstr ""
 
-#: data.py:537
+#: data.py:587
 #, python-brace-format
 msgid "Median Score {number}"
 msgstr ""
 
-#: data.py:538
+#: data.py:588
 #, python-brace-format
 msgid "Feedback {number}"
 msgstr ""
 
-#: data.py:867
+#: data.py:917
 msgid "Item ID"
 msgstr ""
 
-#: data.py:868
+#: data.py:918
 msgid "Submission ID"
 msgstr ""
 
-#: data.py:880
+#: data.py:930
 msgid "Anonymized Student ID"
 msgstr ""
 
-#: data.py:911
+#: data.py:961
 msgid "Assessment ID"
 msgstr ""
 
-#: data.py:912
+#: data.py:962
 msgid "Assessment Scored Date"
 msgstr ""
 
-#: data.py:913
+#: data.py:963
 msgid "Assessment Scored Time"
 msgstr ""
 
-#: data.py:914
+#: data.py:964
 msgid "Assessment Type"
 msgstr ""
 
-#: data.py:915
+#: data.py:965
 msgid "Anonymous Scorer Id"
 msgstr ""
 
-#: data.py:917
+#: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
 msgid "Overall Feedback"
 msgstr "ผลตอบกลับทั้งหมด"
 
-#: data.py:918
+#: data.py:968
 msgid "Assessment Score Earned"
 msgstr ""
 
-#: data.py:919
+#: data.py:969
 msgid "Assessment Scored At"
 msgstr ""
 
-#: data.py:920
+#: data.py:970
 msgid "Date/Time Final Score Given"
 msgstr ""
 
-#: data.py:921
+#: data.py:971
 msgid "Final Score Earned"
 msgstr ""
 
-#: data.py:922
+#: data.py:972
 msgid "Final Score Possible"
 msgstr ""
 
-#: data.py:923
+#: data.py:973
 msgid "Feedback Statements Selected"
 msgstr ""
 
-#: data.py:924
+#: data.py:974
 msgid "Feedback on Assessment"
 msgstr ""
 
-#: data.py:926
+#: data.py:976
 msgid "Response Files"
 msgstr ""
 
-#: data.py:1317
+#: data.py:1367
 msgid "No description provided."
 msgstr ""
+
+#: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
+#: xblock/studio_mixin.py:58
+msgid "None"
+msgstr "ไม่ระบุ"
 
 #: templates/legacy/edit/oa_edit.html:28
 msgid "Save"
@@ -212,6 +231,7 @@ msgstr ""
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:93
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:131
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:157
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:169
 #: templates/legacy/edit/oa_edit_peer_assessment.html:45
 msgid "False"
 msgstr "ผิด"
@@ -220,6 +240,7 @@ msgstr "ผิด"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:94
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:132
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:158
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:170
 #: templates/legacy/edit/oa_edit_peer_assessment.html:46
 msgid "True"
 msgstr "ถูก"
@@ -319,6 +340,28 @@ msgid ""
 "response."
 msgstr ""
 
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:167
+msgid "Allow Learner Resubmissions"
+msgstr ""
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr ""
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:178
+msgid "Resubmission Grace Period"
+msgstr ""
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:187
+msgid ""
+"Specify the maximum period during which resubmissions are allowed. If left "
+"blank, learners will be able to reset their submission as long as it has not"
+" been graded. The grace period starts once the learner has submitted their "
+"response."
+msgstr ""
+
 #: templates/legacy/edit/oa_edit_criterion.html:6
 #: templates/legacy/staff_area/oa_student_info.html:122
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:25
@@ -352,18 +395,14 @@ msgstr "เพิ่มตัวเลือก"
 msgid "Feedback for This Criterion"
 msgstr "ผลตอบรับสำหรับเกณฑ์นี้"
 
-#: templates/legacy/edit/oa_edit_criterion.html:54 xblock/studio_mixin.py:57
-msgid "None"
-msgstr "ไม่ระบุ"
-
-#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:56
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
 msgstr "เป็นตัวเลือก"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
-#: xblock/studio_mixin.py:55
+#: xblock/studio_mixin.py:56
 msgid "Required"
 msgstr "จำเป็น"
 
@@ -390,11 +429,11 @@ msgstr "กฎรูบริค"
 msgid "Schedule"
 msgstr ""
 
-#: templates/legacy/edit/oa_edit_header_and_validation.html:31
+#: templates/legacy/edit/oa_edit_header_and_validation.html:29
 msgid "Assessment steps"
 msgstr ""
 
-#: templates/legacy/edit/oa_edit_header_and_validation.html:38
+#: templates/legacy/edit/oa_edit_header_and_validation.html:36
 msgid "Settings"
 msgstr "การตั้งค่าต่างๆ "
 
@@ -473,6 +512,25 @@ msgid ""
 "studio page."
 msgstr ""
 
+#: templates/legacy/edit/oa_edit_peer_assessment.html:60
+msgid "Grading strategy for the peer assessment"
+msgstr ""
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:62
+msgid "Mean"
+msgstr ""
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:63
+msgid "Median (default)"
+msgstr ""
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:66
+msgid ""
+"Select the preferred grading strategy for the peer assessment. By default, "
+"the median across all peer reviews is used to calculate the final grade. If "
+"you select the mean, the average of all peer reviews will be used."
+msgstr ""
+
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
 msgid "Peer Assessment Deadlines"
 msgstr ""
@@ -514,7 +572,9 @@ msgstr "คุณไม่สามารถลบการแจ้งได้
 msgid ""
 "Prompts. Replace the sample text with your own text. For more information, "
 "see the ORA documentation."
-msgstr "การแจ้ง แทนที่ข้อความตัวอย่างด้วยข้อความของคุณเอง สำหรับข้อมูลเพิ่มเติมโปรดดูที่เอกสาร ORA"
+msgstr ""
+"การแจ้ง แทนที่ข้อความตัวอย่างด้วยข้อความของคุณเอง "
+"สำหรับข้อมูลเพิ่มเติมโปรดดูที่เอกสาร ORA"
 
 #: templates/legacy/edit/oa_edit_prompts.html:22
 msgid "Add Prompt"
@@ -526,7 +586,10 @@ msgid ""
 "Each option has a point value. This template contains two sample criteria "
 "and their options. Replace the sample text with your own text. For more "
 "information, see the ORA documentation."
-msgstr "กฎรูบริคนั้นสร้างมาจากเกณฑ์ซึ่งโดยปกติมีหนึ่งตัวเลือกหรือมากกว่านั้น ในตัวเลือกแต่ละข้อมีค่า เทมเพลตนี้มีสองเกณฑ์ตัวอย่างและตัวเลือกของพวกเขา วางข้อความตัวอย่างด้วยข้อความของคุณเอง ข้อมูลเพิ่มเติม ดูที่งานเอกสารORA"
+msgstr ""
+"กฎรูบริคนั้นสร้างมาจากเกณฑ์ซึ่งโดยปกติมีหนึ่งตัวเลือกหรือมากกว่านั้น "
+"ในตัวเลือกแต่ละข้อมีค่า เทมเพลตนี้มีสองเกณฑ์ตัวอย่างและตัวเลือกของพวกเขา "
+"วางข้อความตัวอย่างด้วยข้อความของคุณเอง ข้อมูลเพิ่มเติม ดูที่งานเอกสารORA"
 
 #: templates/legacy/edit/oa_edit_rubric.html:29
 msgid "Add Criterion"
@@ -564,47 +627,43 @@ msgstr ""
 msgid "Select a deadline configuration option"
 msgstr ""
 
-#: templates/legacy/edit/oa_edit_schedule.html:13
-msgid " NEW"
-msgstr ""
-
-#: templates/legacy/edit/oa_edit_schedule.html:19
+#: templates/legacy/edit/oa_edit_schedule.html:14
 msgid "Configure deadlines manually"
 msgstr ""
 
-#: templates/legacy/edit/oa_edit_schedule.html:23
+#: templates/legacy/edit/oa_edit_schedule.html:18
 msgid "Match deadlines to the subsection due date"
 msgstr ""
 
-#: templates/legacy/edit/oa_edit_schedule.html:27
+#: templates/legacy/edit/oa_edit_schedule.html:22
 msgid "Match deadlines to the course end date"
 msgstr ""
 
-#: templates/legacy/edit/oa_edit_schedule.html:30
+#: templates/legacy/edit/oa_edit_schedule.html:25
 msgid "Learn more about open response date settings"
 msgstr ""
 
-#: templates/legacy/edit/oa_edit_schedule.html:40
+#: templates/legacy/edit/oa_edit_schedule.html:35
 msgid "Response Start Date"
 msgstr "วันเริ่มตอบ"
 
-#: templates/legacy/edit/oa_edit_schedule.html:53
+#: templates/legacy/edit/oa_edit_schedule.html:48
 msgid "Response Start Time"
 msgstr "เวลาเริ่มตอบ"
 
-#: templates/legacy/edit/oa_edit_schedule.html:62
+#: templates/legacy/edit/oa_edit_schedule.html:57
 msgid "The date and time when learners can begin submitting responses."
 msgstr ""
 
-#: templates/legacy/edit/oa_edit_schedule.html:70
+#: templates/legacy/edit/oa_edit_schedule.html:65
 msgid "Response Due Date"
 msgstr "วันกำหนดส่งคำตอบ"
 
-#: templates/legacy/edit/oa_edit_schedule.html:83
+#: templates/legacy/edit/oa_edit_schedule.html:78
 msgid "Response Due Time"
 msgstr "เวลากำหนดส่งคำตอบ"
 
-#: templates/legacy/edit/oa_edit_schedule.html:92
+#: templates/legacy/edit/oa_edit_schedule.html:87
 msgid "The date and time when learners can no longer submit responses."
 msgstr ""
 
@@ -835,13 +894,16 @@ msgstr "ส่งผลตอบกลับ"
 msgid ""
 "Your feedback has been submitted. Course staff will be able to see this "
 "feedback when they review course records."
-msgstr "ผลตอบกลับของคุณส่งเรียบร้อยแล้ว เจ้าหน้าที่หลักสูตรจะสามารถเห็นผลตอบกลับเมื่อเจ้าหน้าที่ตรวจสอบบันทึกหลักสูตร"
+msgstr ""
+"ผลตอบกลับของคุณส่งเรียบร้อยแล้ว "
+"เจ้าหน้าที่หลักสูตรจะสามารถเห็นผลตอบกลับเมื่อเจ้าหน้าที่ตรวจสอบบันทึกหลักสูตร"
 
 #: templates/legacy/grade/oa_grade_complete.html:140
 msgid ""
 "Course staff will be able to see any feedback that you provide here when "
 "they review course records."
-msgstr "เต้าหน้าที่หลักสูตรจะสามารถเห็นผลตอบกลับใดๆก็ตามที่คุณส่งมาให้เมื่อเจ้าที่ตรวจสอบบันทึกหลักสูตร"
+msgstr ""
+"เต้าหน้าที่หลักสูตรจะสามารถเห็นผลตอบกลับใดๆก็ตามที่คุณส่งมาให้เมื่อเจ้าที่ตรวจสอบบันทึกหลักสูตร"
 
 #: templates/legacy/grade/oa_grade_complete.html:146
 msgid ""
@@ -859,7 +921,8 @@ msgstr "การประเมินเหล่านี้ไม่ก่อ
 
 #: templates/legacy/grade/oa_grade_complete.html:173
 msgid "I disagree with one or more of the peer assessments of my response."
-msgstr "ไม่เห็นด้วยกับความเห็นการประเมินอันหนึ่งหรือมากกว่านั้น ต่อคำตอบของของคุณ"
+msgstr ""
+"ไม่เห็นด้วยกับความเห็นการประเมินอันหนึ่งหรือมากกว่านั้น ต่อคำตอบของของคุณ"
 
 #: templates/legacy/grade/oa_grade_complete.html:182
 msgid "Some comments I received were inappropriate."
@@ -952,7 +1015,9 @@ msgstr ""
 msgid ""
 "After you complete all the steps of this assignment, you can see the top-"
 "scoring responses from your peers."
-msgstr "หลังจากเสร็จสิ้นทุกขั้นสำหรับการประเมินครั้งนี้แล้ว คุณสามารถเห็นคะแนนสูงสุดจากเพื่อนได้"
+msgstr ""
+"หลังจากเสร็จสิ้นทุกขั้นสำหรับการประเมินครั้งนี้แล้ว "
+"คุณสามารถเห็นคะแนนสูงสุดจากเพื่อนได้"
 
 #: templates/legacy/message/oa_message_cancelled.html:8
 msgid ""
@@ -1104,7 +1169,7 @@ msgid ""
 msgstr ""
 
 #: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
-#: templates/openassessmentblock/base.html:100
+#: templates/openassessmentblock/base.html:105
 msgid "Loading"
 msgstr "กำลังโหลด"
 
@@ -1221,7 +1286,10 @@ msgid ""
 "\n"
 "            Incomplete (%(num_graded)s of %(num_must_grade)s)\n"
 "        "
-msgstr "\n            ไม่เสร็จ (%(num_graded)s จาก %(num_must_grade)s)\n        "
+msgstr ""
+"\n"
+"            ไม่เสร็จ (%(num_graded)s จาก %(num_must_grade)s)\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_closed.html:35
 msgid ""
@@ -1241,7 +1309,9 @@ msgid ""
 "You have successfully completed all of the required peer assessments for "
 "this assignment. You may assess additional peer responses if you want to. "
 "Completing additional assessments will not affect your final grade."
-msgstr "ประเมินเพื่อนเสร็จสมบูรณ์ทั้งหมด คุณสามารถประเมินเพิ่มได้หากต้องการ การประเมินผลเพิ่มเติมจะไม่ส่งผลต่อคะแนนรวมคุณ"
+msgstr ""
+"ประเมินเพื่อนเสร็จสมบูรณ์ทั้งหมด คุณสามารถประเมินเพิ่มได้หากต้องการ "
+"การประเมินผลเพิ่มเติมจะไม่ส่งผลต่อคะแนนรวมคุณ"
 
 #: templates/legacy/peer/oa_peer_complete.html:36
 msgid "We could not retrieve additional submissions for assessment"
@@ -1258,7 +1328,10 @@ msgid ""
 "\n"
 "        Complete (%(num_graded)s)\n"
 "      "
-msgstr "\nเสร็จสมบูรณ์ (%(num_graded)s)\n      "
+msgstr ""
+"\n"
+"เสร็จสมบูรณ์ (%(num_graded)s)\n"
+"      "
 
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
 msgid ""
@@ -1486,51 +1559,51 @@ msgstr ""
 msgid "Supported file types: "
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:287
+#: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:304
+#: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:306
+#: templates/legacy/response/oa_response.html:307
 msgid ""
 "One team member should submit a response with the team’s shared files and a "
 "text response on behalf of the entire team."
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:308
+#: templates/legacy/response/oa_response.html:309
 msgid ""
 "One team member should submit a response with the team’s shared files on "
 "behalf of the entire team."
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:310
+#: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:312
+#: templates/legacy/response/oa_response.html:313
 msgid "One team member should submit on behalf of the entire team."
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:314
+#: templates/legacy/response/oa_response.html:315
 msgid ""
 "\n"
 "                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
 "                  "
 msgstr ""
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
 msgstr "เราไม่สามารถส่งคำตอบของคุณ"
 
-#: templates/legacy/response/oa_response.html:332
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
 msgstr "ส่งคำตอบของคุณและก้าวไปขั้นต่อไป"
 
@@ -1560,7 +1633,9 @@ msgid ""
 "\n"
 "                            Comments: %(comments)s\n"
 "                        "
-msgstr "\nความคิดเห็น: %(comments)s"
+msgstr ""
+"\n"
+"ความคิดเห็น: %(comments)s"
 
 #: templates/legacy/response/oa_response_closed.html:19
 #: templates/legacy/self/oa_self_closed.html:20
@@ -1624,6 +1699,14 @@ msgid ""
 "                    "
 msgstr ""
 
+#: templates/legacy/response/oa_response_submitted.html:63
+msgid "We could not reset your response"
+msgstr ""
+
+#: templates/legacy/response/oa_response_submitted.html:69
+msgid "Reset response and submit again"
+msgstr ""
+
 #: templates/legacy/response/oa_response_team_already_submitted.html:15
 msgid "Error"
 msgstr ""
@@ -1676,7 +1759,7 @@ msgid ""
 "will receive a grade of Incomplete."
 msgstr ""
 
-#: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:365
+#: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
 msgid "Staff Grade"
 msgstr ""
 
@@ -2097,14 +2180,22 @@ msgid ""
 "already assessed. If you select the same options for the response that the "
 "instructor selected, you'll move to the next step. If you don't select the "
 "same options, you'll review the response and try again."
-msgstr "ก่อนที่คุณจะเริ่มประเมินคำตอบของพื่อน คุณต้องเรียนรู้ว่าจะประเมินเพื่อนอย่างไร โดยการทบทวนคำตอบที่ผู้สอนได้ประเมินไว้แล้ว หากคุณเลือกตัวเลือกเดียวกันกับผู้สอน คุณจะไปขั้นต่อไป หากไม่คุณจะต้องทบทวนคำตอบอีกครั้ง"
+msgstr ""
+"ก่อนที่คุณจะเริ่มประเมินคำตอบของพื่อน "
+"คุณต้องเรียนรู้ว่าจะประเมินเพื่อนอย่างไร "
+"โดยการทบทวนคำตอบที่ผู้สอนได้ประเมินไว้แล้ว "
+"หากคุณเลือกตัวเลือกเดียวกันกับผู้สอน คุณจะไปขั้นต่อไป "
+"หากไม่คุณจะต้องทบทวนคำตอบอีกครั้ง"
 
 #: templates/legacy/student_training/student_training.html:69
 msgid ""
 "Your assessment differs from the instructor's assessment of this response. "
 "Review the response and consider why the instructor may have assessed it "
 "differently. Then, try the assessment again."
-msgstr "การประเมินของคุณต่างจากผู้สอนในคำตอบนี้ ทบทวนคำตอบและพิจารณาว่าเหตุใดผู้สอนจึงให้การประเมินที่ต่างออกไป จากนั้นลองประเมินอีกครั้ง"
+msgstr ""
+"การประเมินของคุณต่างจากผู้สอนในคำตอบนี้ "
+"ทบทวนคำตอบและพิจารณาว่าเหตุใดผู้สอนจึงให้การประเมินที่ต่างออกไป "
+"จากนั้นลองประเมินอีกครั้ง"
 
 #: templates/legacy/student_training/student_training.html:76
 msgid "The response to the prompt above:"
@@ -2150,88 +2241,98 @@ msgstr ""
 msgid "The Learner Training Step of this assignment could not be loaded."
 msgstr ""
 
-#: xblock/grade_mixin.py:77 xblock/leaderboard_mixin.py:61
+#: templates/openassessmentblock/base.html:69
+msgid "Loading Open Response Assessment..."
+msgstr ""
+
+#: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
 msgid "An unexpected error occurred."
 msgstr "เกิดข้อผิดพลาดที่คาดไม่ถึง"
 
-#: xblock/grade_mixin.py:179
+#: xblock/grade_mixin.py:180
 msgid "Peer Assessment"
 msgstr "การประเมินผลโดยเพื่อน"
 
-#: xblock/grade_mixin.py:181
+#: xblock/grade_mixin.py:182
 msgid "Self Assessment"
 msgstr "การประเมินตนเอง"
 
-#: xblock/grade_mixin.py:221
+#: xblock/grade_mixin.py:222
 msgid "Assessment feedback could not be saved."
 msgstr "ผลตอบกลับการประเมินไม่สามารถบันทึก"
 
-#: xblock/grade_mixin.py:232
+#: xblock/grade_mixin.py:233
 msgid "Feedback saved."
 msgstr "ผลตอบกลับบันทึกแล้ว"
 
-#: xblock/grade_mixin.py:366 xblock/grade_mixin.py:512
+#: xblock/grade_mixin.py:370 xblock/grade_mixin.py:535
 msgid "Staff Comments"
 msgstr ""
 
-#: xblock/grade_mixin.py:372
-msgid "Peer Median Grade"
-msgstr ""
-
-#: xblock/grade_mixin.py:377 xblock/grade_mixin.py:519
+#: xblock/grade_mixin.py:383 xblock/grade_mixin.py:542
 #, python-brace-format
 msgid "Peer {peer_index}"
 msgstr ""
 
-#: xblock/grade_mixin.py:378
+#: xblock/grade_mixin.py:384
 msgid "Peer Comments"
 msgstr ""
 
-#: xblock/grade_mixin.py:388
+#: xblock/grade_mixin.py:394
 msgid "Self Assessment Grade"
 msgstr ""
 
-#: xblock/grade_mixin.py:388
+#: xblock/grade_mixin.py:394
 msgid "Your Self Assessment"
 msgstr "การประเมินส่วนตัว"
 
-#: xblock/grade_mixin.py:389 xblock/grade_mixin.py:531
+#: xblock/grade_mixin.py:395 xblock/grade_mixin.py:554
 msgid "Your Comments"
 msgstr ""
 
-#: xblock/grade_mixin.py:485
+#: xblock/grade_mixin.py:429
+msgid "Peer Mean Grade"
+msgstr ""
+
+#: xblock/grade_mixin.py:430
+msgid "Peer Median Grade"
+msgstr ""
+
+#: xblock/grade_mixin.py:508
 msgid "Waiting for peer reviews"
 msgstr ""
 
-#: xblock/grade_mixin.py:524
-msgid "Peer"
-msgstr "เพื่อน"
-
-#: xblock/grade_mixin.py:655
+#: xblock/grade_mixin.py:677
 msgid "The grade for this problem is determined by your Staff Grade."
 msgstr ""
 
-#: xblock/grade_mixin.py:657
-msgid ""
-"The grade for this problem is determined by the median score of your Peer "
-"Assessments."
-msgstr ""
-
-#: xblock/grade_mixin.py:660
+#: xblock/grade_mixin.py:681
 msgid "The grade for this problem is determined by your Self Assessment."
 msgstr ""
 
-#: xblock/grade_mixin.py:666
+#: xblock/grade_mixin.py:687
 #, python-brace-format
 msgid ""
 "You have successfully completed this problem and received a "
 "{earned_points}/{total_points}."
 msgstr ""
 
-#: xblock/grade_mixin.py:674
+#: xblock/grade_mixin.py:695
 msgid ""
 "You have not yet received all necessary peer reviews to determine your final"
 " grade."
+msgstr ""
+
+#: xblock/grade_mixin.py:710
+msgid ""
+"The grade for this problem is determined by the median score of your Peer "
+"Assessments."
+msgstr ""
+
+#: xblock/grade_mixin.py:715
+msgid ""
+"The grade for this problem is determined by the mean score of your Peer "
+"Assessments."
 msgstr ""
 
 #: xblock/openassesment_template_mixin.py:66
@@ -2252,6 +2353,22 @@ msgstr ""
 
 #: xblock/openassesment_template_mixin.py:70
 msgid "Self Assessment to Staff Assessment"
+msgstr ""
+
+#: xblock/openassessmentblock.py:1365
+msgid "You can't reset your submission."
+msgstr ""
+
+#: xblock/openassessmentblock.py:1378
+msgid "The user does not exist."
+msgstr ""
+
+#: xblock/openassessmentblock.py:1381
+msgid "There is no submission to reset."
+msgstr ""
+
+#: xblock/openassessmentblock.py:1383
+msgid "Submission reset successfully."
 msgstr ""
 
 #: xblock/rubric_reuse_mixin.py:62
@@ -2288,43 +2405,43 @@ msgstr ""
 msgid "You do not have permission to access ORA staff grading."
 msgstr ""
 
-#: xblock/staff_area_mixin.py:242
+#: xblock/staff_area_mixin.py:241
 msgid "Pending"
 msgstr ""
 
-#: xblock/staff_area_mixin.py:243
+#: xblock/staff_area_mixin.py:242
 msgid "Complete/Overwritten"
 msgstr ""
 
-#: xblock/staff_area_mixin.py:246
+#: xblock/staff_area_mixin.py:245
 msgid "Not applicable"
 msgstr ""
 
-#: xblock/staff_area_mixin.py:247
+#: xblock/staff_area_mixin.py:246
 msgid "Not submitted"
 msgstr ""
 
-#: xblock/staff_area_mixin.py:248
+#: xblock/staff_area_mixin.py:247
 msgid "Submitted"
 msgstr ""
 
-#: xblock/staff_area_mixin.py:342
+#: xblock/staff_area_mixin.py:341
 msgid "Error getting learner information."
 msgstr ""
 
-#: xblock/staff_area_mixin.py:385
+#: xblock/staff_area_mixin.py:384
 msgid "Error loading the checked out learner response."
 msgstr ""
 
-#: xblock/staff_area_mixin.py:386
+#: xblock/staff_area_mixin.py:385
 msgid "No other learner responses are available for grading at this time."
 msgstr ""
 
-#: xblock/staff_area_mixin.py:388
+#: xblock/staff_area_mixin.py:387
 msgid "Error getting staff grade information."
 msgstr ""
 
-#: xblock/staff_area_mixin.py:409
+#: xblock/staff_area_mixin.py:408
 msgid "Error getting staff grade ungraded and checked out counts."
 msgstr ""
 
@@ -2354,30 +2471,30 @@ msgid ""
 "allow the team to resubmit a response."
 msgstr ""
 
-#: xblock/studio_mixin.py:243 xblock/studio_mixin.py:255
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
 msgstr "ข้อผิดพลาดในการอัพเดตการกำหนดค่า XBlock"
 
-#: xblock/studio_mixin.py:260
+#: xblock/studio_mixin.py:264
 msgid "Error: Text Response and File Upload Response cannot both be disabled"
 msgstr ""
 
-#: xblock/studio_mixin.py:264
+#: xblock/studio_mixin.py:268
 msgid ""
 "Error: When Text Response is disabled, File Upload Response must be Required"
 msgstr ""
 
-#: xblock/studio_mixin.py:267
+#: xblock/studio_mixin.py:271
 msgid ""
 "Error: When File Upload Response is disabled, Text Response must be Required"
 msgstr ""
 
-#: xblock/studio_mixin.py:291
+#: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
 msgstr "สาเหตุผิดพลาด: {error}"
 
-#: xblock/studio_mixin.py:323
+#: xblock/studio_mixin.py:329
 msgid "Successfully updated OpenAssessment XBlock"
 msgstr "การอัพเดทการประเมินแบบเปิด XBlockเสร็จสมบูรณ์"
 
@@ -2398,7 +2515,9 @@ msgstr ""
 msgid ""
 "'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
 "MM-DDTHH:MM:SS."
-msgstr "'{date}'รูปแบบไม่ถูกต้อง ตรวจสอบรูปแบบการเรียงเวลาให้เป็นรูปแบบนี้ YYYY-MM-DDTHH:MM:SS "
+msgstr ""
+"'{date}'รูปแบบไม่ถูกต้อง ตรวจสอบรูปแบบการเรียงเวลาให้เป็นรูปแบบนี้ YYYY-MM-"
+"DDTHH:MM:SS "
 
 #: xblock/utils/resolve_dates.py:57
 #, python-brace-format
@@ -2410,106 +2529,122 @@ msgstr "'{date}' ต้องเป็นตัวอักษรวันที
 msgid ""
 "This step's start date '{start}' cannot be earlier than the previous step's "
 "start date '{prev}'."
-msgstr "วันเริ่มในขั้นนี้  '{start}'ไม่สามารถจะเร็วกว่าวันที่เริ่มต้นขั้นตอนก่อนหน้า'{prev}'"
+msgstr ""
+"วันเริ่มในขั้นนี้  "
+"'{start}'ไม่สามารถจะเร็วกว่าวันที่เริ่มต้นขั้นตอนก่อนหน้า'{prev}'"
 
 #: xblock/utils/resolve_dates.py:218
 #, python-brace-format
 msgid ""
 "This step's due date '{due}' cannot be later than the next step's due date "
 "'{prev}'."
-msgstr "วันเริ่มในขั้นนี้  '{due}'ไม่สามารถจะช้ากว่าวันที่เริ่มต้นขั้นตอนก่อนหน้า'{prev}'"
+msgstr ""
+"วันเริ่มในขั้นนี้  "
+"'{due}'ไม่สามารถจะช้ากว่าวันที่เริ่มต้นขั้นตอนก่อนหน้า'{prev}'"
 
 #: xblock/utils/resolve_dates.py:234
 #, python-brace-format
 msgid "The start date '{start}' cannot be later than the due date '{due}'"
 msgstr "วันเริ่มในขั้นนี้ '{start}'ไม่สามารถจะช้ากว่าวันกำหนดส่ง '{due}'"
 
-#: xblock/utils/validation.py:118
+#: xblock/utils/validation.py:120
 msgid "This problem must include at least one assessment."
 msgstr "ปัญหานี้ต้องมีอย่างน้อยหนึ่งการประเมิน"
 
-#: xblock/utils/validation.py:122
+#: xblock/utils/validation.py:124
 msgid "The assessment order you selected is invalid."
 msgstr "ลำดับการประเมินที่คุณเลือกไม่ถูกต้อง"
 
-#: xblock/utils/validation.py:132
+#: xblock/utils/validation.py:134
 msgid "In peer assessment, the \"Must Grade\" value must be a positive integer."
 msgstr "การประเมินโดยเพื่อน ค่า\"ต้องให้คะแนน\" ต้องเป็นจำนวนเต็มบวก"
 
-#: xblock/utils/validation.py:135
+#: xblock/utils/validation.py:137
 msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
 msgstr "การประเมินโดยเพื่อน ค่า\"ให้คะแนนโดย\" ต้องเป็นจำนวนเต็มบวก"
 
-#: xblock/utils/validation.py:139
+#: xblock/utils/validation.py:141
 msgid ""
 "In peer assessment, the \"Must Grade\" value must be greater than or equal "
 "to the \"Graded By\" value."
-msgstr "การประเมินโดยเพื่อน ค่า \"ต้องให้คะแนน\"ต้องมากกว่าหรือเท่ากับค่า  \"ให้คะแนนโดย\" "
+msgstr ""
+"การประเมินโดยเพื่อน ค่า \"ต้องให้คะแนน\"ต้องมากกว่าหรือเท่ากับค่า  "
+"\"ให้คะแนนโดย\" "
 
-#: xblock/utils/validation.py:148
+#: xblock/utils/validation.py:150
 msgid "You must provide at least one example response for learner training."
 msgstr ""
 
-#: xblock/utils/validation.py:151
+#: xblock/utils/validation.py:153
 msgid "Each example response for learner training must be unique."
 msgstr ""
 
-#: xblock/utils/validation.py:158
+#: xblock/utils/validation.py:160
 msgid "The \"required\" value must be true if staff assessment is the only step."
 msgstr ""
 
-#: xblock/utils/validation.py:162
+#: xblock/utils/validation.py:164
 msgid ""
 "The number of assessments cannot be changed after the problem has been "
 "released."
 msgstr "จำนวนของการประเมินไม่สามารถเปลี่ยนได้หลังออกคำถามไปแล้ว"
 
-#: xblock/utils/validation.py:167
+#: xblock/utils/validation.py:169
 msgid ""
 "The assessment type cannot be changed after the problem has been released."
 msgstr "ประเภทของการประเมินไม่สามารถเปลี่ยนได้หลังออกคำถามไปแล้ว"
 
-#: xblock/utils/validation.py:190
+#: xblock/utils/validation.py:176
+msgid ""
+"The grading strategy for peer assessments cannot be changed after the "
+"problem has been released."
+msgstr ""
+
+#: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
 msgstr "การอธิบายกฎรูบริคไม่ถูกต้อง"
 
-#: xblock/utils/validation.py:196
+#: xblock/utils/validation.py:203
+msgid "You must provide at least one prompt."
+msgstr ""
+
+#: xblock/utils/validation.py:209
 #, python-brace-format
 msgid "Options in '{criterion}' have duplicate name(s): {duplicates}"
 msgstr "ตัวเลือกใน '{criterion}'ต้องคัดลอกชื่อ(s): {duplicates}"
 
-#: xblock/utils/validation.py:204
+#: xblock/utils/validation.py:217
 msgid "Criteria with no options must require written feedback."
 msgstr "เกณฑ์ที่ไม่มีตัวเลือกต้องเขียนรายงานตอบกลับ"
 
-#: xblock/utils/validation.py:213
+#: xblock/utils/validation.py:226
 msgid "Prompts cannot be created or deleted after a problem is released."
 msgstr "ข้อความแจ้งไม่สามารถสร้างหรือลบหลังจากที่ปัญหาถูกปล่อย"
 
-#: xblock/utils/validation.py:217
+#: xblock/utils/validation.py:230
 msgid "The number of criteria cannot be changed after a problem is released."
 msgstr "จำนวนของเกณฑ์ไม่สามารถเปลี่ยนได้หลังออกคำถามไปแล้ว"
 
-#: xblock/utils/validation.py:230
+#: xblock/utils/validation.py:243
 msgid "Criteria names cannot be changed after a problem is released"
 msgstr "ชื่อเกณฑ์ไม่สามารถเปลี่ยนได้หลังออกคำถามไปแล้ว"
 
-#: xblock/utils/validation.py:235
+#: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."
 msgstr "จำนวนของตัวเลือกไม่สามารถเปลี่ยนได้หลังออกคำถามไปแล้ว"
 
-#: xblock/utils/validation.py:240
+#: xblock/utils/validation.py:253
 msgid "Point values cannot be changed after a problem is released."
 msgstr "ค่าของจุดไม่สามารถเปลี่ยนได้หลังออกคำถามไปแล้ว"
 
-#: xblock/utils/validation.py:291
+#: xblock/utils/validation.py:304
 msgid "Learner training must have at least one training example."
 msgstr ""
 
-#: xblock/utils/validation.py:356
+#: xblock/utils/validation.py:369
 msgid "Leaderboard number is invalid."
 msgstr "หมายเลขกระดานผู้นำไม่ถูกต้อง"
 
-#: xblock/utils/validation.py:379
+#: xblock/utils/validation.py:392
 msgid "The submission format is invalid."
 msgstr "รูปแบบการส่งไม่ถูกต้อง"

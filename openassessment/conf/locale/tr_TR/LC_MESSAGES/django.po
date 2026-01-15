@@ -2,29 +2,19 @@
 # edX translation file
 # Copyright (C) 2018 edX
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
+# EdX Team <info@edx.org>, 2018.
 # 
 # Translators:
-# Adem Özgür <admozgur@gmail.com>, 2015
-# Ali Işıngör <ali@artistanbul.io>, 2018-2023
-# ali selek <aliselek01@gmail.com>, 2015
-# Ayhan Aksoy <aksoyayhan1@gmail.com>, 2015
-# Emrah Emirtekin <eemirtekin@gmail.com>, 2015
-# 00f403b44f997af1c6042d2ed7dd6401_3a00d02 <b14bfe84763aae05bab3d218a58936aa_222192>, 2014
-# Gencay <gencayerdem@hotmail.com>, 2015
-# Hakan Şenel <hgsenel@gmail.com>, 2015
-# İlker IŞIK <m.ilkerisik@hotmail.com>, 2015
-# Kubilay <kubilayinceoren10@gmail.com>, 2015
-# msare <mervesareakin@gmail.com>, 2014
-# 169685c64da20f8565d5bb4b5fa14388_0122c8a <d6cdb6a8d55668108fbee6af67afa0d1_255939>, 2015
-# Tevfik Bagcivan <tevfik.bagcivan@gmail.com>, 2016
+# Brian Smith, 2025
+# 
 msgid ""
 msgstr ""
-"Project-Id-Version: edx-platform\n"
+"Project-Id-Version: edx-ora2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 18:37+0000\n"
-"PO-Revision-Date: 2014-06-11 13:03+0000\n"
-"Last-Translator: Ali Işıngör <ali@artistanbul.io>, 2018-2023\n"
-"Language-Team: Turkish (Turkey) (http://app.transifex.com/open-edx/edx-platform/language/tr_TR/)\n"
+"POT-Creation-Date: 2025-10-30 00:45+0000\n"
+"PO-Revision-Date: 2025-11-17 07:23+0000\n"
+"Last-Translator: Brian Smith, 2025\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/open-edx/teams/6205/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -39,7 +29,10 @@ msgstr "Seri olarak yayınlanmış dereceli puanlama anahtarı ayrıştırılama
 msgid ""
 "If your assignment includes a learner training step, the rubric must have at"
 " least one criterion, and that criterion must have at least one option."
-msgstr "Eğer göreviniz öğrenci eğitim basamağı içeriyorsa, dereceli puanlama anahtarı en az bir tane ölçüte sahip olmalıdır, ve bu ölçek en az bir seçeneğe sahip olmalıdır."
+msgstr ""
+"Eğer göreviniz öğrenci eğitim basamağı içeriyorsa, dereceli puanlama "
+"anahtarı en az bir tane ölçüte sahip olmalıdır, ve bu ölçek en az bir "
+"seçeneğe sahip olmalıdır."
 
 #: assessment/api/student_training.py:203
 #, python-brace-format
@@ -51,110 +44,134 @@ msgstr "{example_number} numaralı örnekte bir doğrulama hatası var: {error}"
 msgid ""
 "Example {example_number} has an invalid option for \"{criterion_name}\": "
 "\"{option_name}\""
-msgstr "{example_number} numaralı örnek \"{criterion_name}\" için geçersiz seçeneğe sahip: \"{option_name}\""
+msgstr ""
+"{example_number} numaralı örnek \"{criterion_name}\" için geçersiz seçeneğe "
+"sahip: \"{option_name}\""
 
 #: assessment/api/student_training.py:227
 #, python-brace-format
 msgid "Example {example_number} has an extra option for \"{criterion_name}\""
-msgstr "{example_number} numaralı örnek \"{criterion_name}\" ekstra seçeneğe sahip."
+msgstr ""
+"{example_number} numaralı örnek \"{criterion_name}\" ekstra seçeneğe sahip."
 
 #: assessment/api/student_training.py:240
 #, python-brace-format
 msgid "Example {example_number} is missing an option for \"{criterion_name}\""
 msgstr "\"{criterion_name}\" için eksik ayar örnek {example_number}"
 
-#: data.py:534
+#: assessment/score_type_constants.py:21 xblock/grade_mixin.py:547
+msgid "Peer"
+msgstr "Akran"
+
+#: assessment/score_type_constants.py:22
+msgid "Self"
+msgstr "Kendin"
+
+#: assessment/score_type_constants.py:23
+msgid "Staff"
+msgstr "Personel"
+
+#: assessment/score_type_constants.py:25
+msgid "Unknown"
+msgstr "Bilinmiyor"
+
+#: data.py:584
 #, python-brace-format
 msgid "Criterion {number}: {label}"
 msgstr "Ölçüt {number}: {label}"
 
-#: data.py:536
+#: data.py:586
 #, python-brace-format
 msgid "Points {number}"
 msgstr "{number} Puan"
 
-#: data.py:537
+#: data.py:587
 #, python-brace-format
 msgid "Median Score {number}"
 msgstr "Medyan Not {number}"
 
-#: data.py:538
+#: data.py:588
 #, python-brace-format
 msgid "Feedback {number}"
 msgstr "{number} Geribildirim"
 
-#: data.py:867
+#: data.py:917
 msgid "Item ID"
 msgstr "Öğe Kimliği"
 
-#: data.py:868
+#: data.py:918
 msgid "Submission ID"
 msgstr "Gönderim Kimliği"
 
-#: data.py:880
+#: data.py:930
 msgid "Anonymized Student ID"
 msgstr "Anonimleştirilmiş Öğrenci Kimliği"
 
-#: data.py:911
+#: data.py:961
 msgid "Assessment ID"
 msgstr "Değerlendirme Kimliği"
 
-#: data.py:912
+#: data.py:962
 msgid "Assessment Scored Date"
 msgstr "Değerlendirme Puan Tarihi"
 
-#: data.py:913
+#: data.py:963
 msgid "Assessment Scored Time"
 msgstr "Değerlendirme Puan Zamanı"
 
-#: data.py:914
+#: data.py:964
 msgid "Assessment Type"
 msgstr "Değerlendirme Türü"
 
-#: data.py:915
+#: data.py:965
 msgid "Anonymous Scorer Id"
 msgstr "Anonim Puanlayıcı Kimliği"
 
-#: data.py:917
+#: data.py:967
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:59
 msgid "Overall Feedback"
 msgstr "Genel Geri Bildirim"
 
-#: data.py:918
+#: data.py:968
 msgid "Assessment Score Earned"
 msgstr "Kazanılan Değerlendirme Puanı"
 
-#: data.py:919
+#: data.py:969
 msgid "Assessment Scored At"
 msgstr "Puanlanan Değerlendirme"
 
-#: data.py:920
+#: data.py:970
 msgid "Date/Time Final Score Given"
 msgstr "Final Notu Verilme Tarihi/Zamanı"
 
-#: data.py:921
+#: data.py:971
 msgid "Final Score Earned"
 msgstr "Alınan Final Notu"
 
-#: data.py:922
+#: data.py:972
 msgid "Final Score Possible"
 msgstr "Alınabilir Final Notu"
 
-#: data.py:923
+#: data.py:973
 msgid "Feedback Statements Selected"
 msgstr "Geri Bildirim İfadeleri Seçildi"
 
-#: data.py:924
+#: data.py:974
 msgid "Feedback on Assessment"
 msgstr "Değerlendirmeye İlişkin Geri Bildirim"
 
-#: data.py:926
+#: data.py:976
 msgid "Response Files"
 msgstr "Yanıt Dosyaları "
 
-#: data.py:1317
+#: data.py:1367
 msgid "No description provided."
 msgstr "Açıklama girilmemiş."
+
+#: data.py:1626 templates/legacy/edit/oa_edit_criterion.html:54
+#: xblock/studio_mixin.py:58
+msgid "None"
+msgstr "Hiçbiri"
 
 #: templates/legacy/edit/oa_edit.html:28
 msgid "Save"
@@ -170,7 +187,11 @@ msgid ""
 " a rubric based open response assessment sequence. The steps available below"
 " can be enabled, disable, and ordered for a flexible set of pedagogical "
 "needs."
-msgstr "Açık Yanıt Değerlendirmeleri, bir dereceli puanlama anahtarı tabanlı açık yanıt değerlendirme dizisinde tek veya birden çok adımı yapılandırmanıza olanak tanır. Aşağıda bulunan adımlar etkinleştirilebilir, devre dışı bırakılabilir ve esnek pedagojik ihtiyaçlar doğrultusunda sıralanabilir."
+msgstr ""
+"Açık Yanıt Değerlendirmeleri, bir dereceli puanlama anahtarı tabanlı açık "
+"yanıt değerlendirme dizisinde tek veya birden çok adımı yapılandırmanıza "
+"olanak tanır. Aşağıda bulunan adımlar etkinleştirilebilir, devre dışı "
+"bırakılabilir ve esnek pedagojik ihtiyaçlar doğrultusunda sıralanabilir."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:5
 msgid "Display Name "
@@ -188,7 +209,9 @@ msgstr "Metin Yanıtı"
 msgid ""
 "Specify whether learners must include a text based response to this "
 "problem's prompt."
-msgstr "Öğrencilerin bu sorunun karşısına metin tabanlı bir yanıt eklemesi gerekip gerekmediğini belirtin."
+msgstr ""
+"Öğrencilerin bu sorunun karşısına metin tabanlı bir yanıt eklemesi gerekip "
+"gerekmediğini belirtin."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:25
 msgid "Response Editor"
@@ -198,7 +221,9 @@ msgstr "Yanıt Editörü"
 msgid ""
 "Select which editor learners will use to include a text based response to "
 "this problem's prompt."
-msgstr "Bu sorunun karşısına metin tabanlı bir yanıt eklemek için öğrencilerin hangi editörü kullanacağını seçin. "
+msgstr ""
+"Bu sorunun karşısına metin tabanlı bir yanıt eklemek için öğrencilerin hangi"
+" editörü kullanacağını seçin. "
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:38
 msgid "File Uploads Response"
@@ -208,7 +233,9 @@ msgstr "Dosya Yüklemeli Yanıt"
 msgid ""
 "Specify whether learners are able to upload files as a part of their "
 "response."
-msgstr "Öğrencilerin yanıtlarının bir parçası olarak dosya yükleyip yükleyemeyeceklerini belirtin."
+msgstr ""
+"Öğrencilerin yanıtlarının bir parçası olarak dosya yükleyip "
+"yükleyemeyeceklerini belirtin."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:50
 msgid "Allow Multiple Files"
@@ -218,6 +245,7 @@ msgstr "Çoklu Dosyalara İzin Ver"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:93
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:131
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:157
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:169
 #: templates/legacy/edit/oa_edit_peer_assessment.html:45
 msgid "False"
 msgstr "Yanlış"
@@ -226,6 +254,7 @@ msgstr "Yanlış"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:94
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:132
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:158
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:170
 #: templates/legacy/edit/oa_edit_peer_assessment.html:46
 msgid "True"
 msgstr "Doğru"
@@ -235,7 +264,10 @@ msgid ""
 "Specify whether learners can upload more than one file. This has no effect "
 "if File Uploads Response is set to None. This is automatically set to True "
 "for Team Assignments. "
-msgstr "Öğrencilerin birden fazla dosya yükleyip yükleyemeyeceğini belirtin. Dosya Yükleme Yanıtı None olarak ayarlanırsa bunun hiçbir etkisi yoktur. Bu, Takım Görevleri için otomatik olarak True olarak ayarlanır."
+msgstr ""
+"Öğrencilerin birden fazla dosya yükleyip yükleyemeyeceğini belirtin. Dosya "
+"Yükleme Yanıtı None olarak ayarlanırsa bunun hiçbir etkisi yoktur. Bu, Takım"
+" Görevleri için otomatik olarak True olarak ayarlanır."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:58
 msgid "File Upload Types"
@@ -256,7 +288,9 @@ msgstr "Özel Dosya Türleri"
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:66
 msgid ""
 "Specify whether learners can submit files along with their text responses."
-msgstr "Öğrencilerin metin yanıtlarıyla birlikte dosya gönderip gönderemeyeceklerini belirtin."
+msgstr ""
+"Öğrencilerin metin yanıtlarıyla birlikte dosya gönderip gönderemeyeceklerini"
+" belirtin."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:70
 msgid "File Types"
@@ -266,13 +300,17 @@ msgstr "Dosya Türleri"
 msgid ""
 "Enter the file extensions, separated by commas, that you want learners to be"
 " able to upload. For example: pdf,doc,docx."
-msgstr "Öğrencilerin yüklemesinin mümkün olmasını istediğiniz dosya uzantılarını virgülle ayırarak girin. Örneğin: pdf,doc,docx."
+msgstr ""
+"Öğrencilerin yüklemesinin mümkün olmasını istediğiniz dosya uzantılarını "
+"virgülle ayırarak girin. Örneğin: pdf,doc,docx."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:84
 msgid ""
 "To add more file extensions, select Custom File Types and enter the full "
 "list of acceptable file extensions to be included."
-msgstr "Daha fazla dosya uzantısı eklemek için Özel Dosya Türleri'ni seçin ve dahil edilecek kabul edilebilir dosya uzantılarının tam listesini girin."
+msgstr ""
+"Daha fazla dosya uzantısı eklemek için Özel Dosya Türleri'ni seçin ve dahil "
+"edilecek kabul edilebilir dosya uzantılarının tam listesini girin."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:91
 msgid "Allow LaTeX Responses"
@@ -280,7 +318,8 @@ msgstr "LaTeX Yanıtlarına İzin Ver"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:97
 msgid "Specify whether learners can write LaTeX formatted strings"
-msgstr "Öğrencilerin LaTeX formatlı dizgileri düzenleyip düzenleyemeyeceğini belirle"
+msgstr ""
+"Öğrencilerin LaTeX formatlı dizgileri düzenleyip düzenleyemeyeceğini belirle"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:102
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:8
@@ -297,11 +336,16 @@ msgid ""
 "Specify the number of top scoring responses to display after the learner has"
 " submitted a response. Valid numbers are 0 to 99. If the number is 0, the "
 "Top Responses section does not appear to learners."
-msgstr "Öğrenci bir yanıt gönderdikten sonra görüntülenecek en yüksek puanlı yanıtların sayısını belirtin. Geçerli sayılar 0 - 99 arasındadır. Sayı 0 ise, En İyi Yanıtlar bölümü öğrencilere görünmez."
+msgstr ""
+"Öğrenci bir yanıt gönderdikten sonra görüntülenecek en yüksek puanlı "
+"yanıtların sayısını belirtin. Geçerli sayılar 0 - 99 arasındadır. Sayı 0 "
+"ise, En İyi Yanıtlar bölümü öğrencilere görünmez."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:122
 msgid "When Teams Enabled is set to true, Top Responses will be disabled."
-msgstr "Takımlar Etkin true olarak ayarlandığında, En İyi Yanıtlar devre dışı bırakılır."
+msgstr ""
+"Takımlar Etkin true olarak ayarlandığında, En İyi Yanıtlar devre dışı "
+"bırakılır."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:129
 msgid "Teams Enabled"
@@ -309,7 +353,8 @@ msgstr "Takımlar Etkin"
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:136
 msgid "Specify whether team submissions are allowed for this response."
-msgstr "Bu yanıt için ekip gönderimlerine izin verilip verilmediğini belirtin."
+msgstr ""
+"Bu yanıt için ekip gönderimlerine izin verilip verilmediğini belirtin."
 
 #: templates/legacy/edit/oa_edit_basic_settings_list.html:141
 msgid "Select Team-Set"
@@ -323,7 +368,37 @@ msgstr "Yanıt Sırasında Dereceli Puanlama Anahtarını Göster"
 msgid ""
 "Specify whether learners can see the rubric while they are working on their "
 "response."
-msgstr "Öğrencilerin yanıtları üzerinde çalışırken dereceli puanlama anahtarını görüp göremeyeceklerini belirtin."
+msgstr ""
+"Öğrencilerin yanıtları üzerinde çalışırken dereceli puanlama anahtarını "
+"görüp göremeyeceklerini belirtin."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:167
+msgid "Allow Learner Resubmissions"
+msgstr "Öğrencinin Yeniden Gönderimlerine İzin Ver"
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:174
+msgid ""
+"Set to TRUE to allow learners to resubmit ungraded work. Set to FALSE if "
+"resubmissions are not allowed."
+msgstr ""
+"Öğrencilerin not verilmeyen çalışmaları yeniden göndermesine izin vermek "
+"için TRUE olarak ayarlayın. Yeniden gönderimlere izin verilmiyorsa FALSE "
+"olarak ayarlayın."
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:178
+msgid "Resubmission Grace Period"
+msgstr ""
+
+#: templates/legacy/edit/oa_edit_basic_settings_list.html:187
+msgid ""
+"Specify the maximum period during which resubmissions are allowed. If left "
+"blank, learners will be able to reset their submission as long as it has not"
+" been graded. The grace period starts once the learner has submitted their "
+"response."
+msgstr ""
+"Yeniden gönderimlere izin verilen maksimum süreyi belirtin. Boş bırakılırsa "
+"öğrenciler, not verilmediği sürece gönderimlerini sıfırlayabilecekler. Ek "
+"süre, öğrencinin yanıtını göndermesiyle başlar."
 
 #: templates/legacy/edit/oa_edit_criterion.html:6
 #: templates/legacy/staff_area/oa_student_info.html:122
@@ -358,18 +433,14 @@ msgstr "Seçenek Ekle"
 msgid "Feedback for This Criterion"
 msgstr "Bu Ölçüt için Dönüt"
 
-#: templates/legacy/edit/oa_edit_criterion.html:54 xblock/studio_mixin.py:57
-msgid "None"
-msgstr "Hiçbiri"
-
-#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:56
+#: templates/legacy/edit/oa_edit_criterion.html:55 xblock/studio_mixin.py:57
 msgid "Optional"
 msgstr "İsteğe Bağlı"
 
 #: templates/legacy/edit/oa_edit_criterion.html:56
 #: templates/legacy/oa_rubric.html:13
 #: templates/legacy/student_training/student_training.html:93
-#: xblock/studio_mixin.py:55
+#: xblock/studio_mixin.py:56
 msgid "Required"
 msgstr "Gerekli"
 
@@ -377,7 +448,9 @@ msgstr "Gerekli"
 msgid ""
 "Select one of the options above. This describes whether or not the reviewer "
 "will have to provide criterion feedback."
-msgstr "Yukarıdaki seçeneklerden birini seçin. Bu, gözden geçirenin ölçüt geri bildirimi sağlamak zorunda olup olmayacağını açıklar."
+msgstr ""
+"Yukarıdaki seçeneklerden birini seçin. Bu, gözden geçirenin ölçüt geri "
+"bildirimi sağlamak zorunda olup olmayacağını açıklar."
 
 #: templates/legacy/edit/oa_edit_header_and_validation.html:3
 msgid "Open Response Assessment"
@@ -396,11 +469,11 @@ msgstr "Dereceli Puanlama Anahtarı"
 msgid "Schedule"
 msgstr "Takvim"
 
-#: templates/legacy/edit/oa_edit_header_and_validation.html:31
+#: templates/legacy/edit/oa_edit_header_and_validation.html:29
 msgid "Assessment steps"
 msgstr "Değerlendirme adımları"
 
-#: templates/legacy/edit/oa_edit_header_and_validation.html:38
+#: templates/legacy/edit/oa_edit_header_and_validation.html:36
 msgid "Settings"
 msgstr "Ayarlar"
 
@@ -429,14 +502,22 @@ msgid ""
 "Peer Assessment allows students to provide feedback to other students and "
 "also receive feedback from others in their final grade. Often, though not "
 "always, this step is preceded by Self Assessment or Learner Training steps."
-msgstr "Akran Değerlendirmesi, öğrencilerin diğer öğrencilere geri bildirimde bulunmalarına ve ayrıca final notlarında başkalarından geri bildirim almalarına olanak tanır. Her zaman olmasa da genellikle bu adımdan önce Kişisel Değerlendirme veya Öğrenci Eğitimi adımları gelir."
+msgstr ""
+"Akran Değerlendirmesi, öğrencilerin diğer öğrencilere geri bildirimde "
+"bulunmalarına ve ayrıca final notlarında başkalarından geri bildirim "
+"almalarına olanak tanır. Her zaman olmasa da genellikle bu adımdan önce "
+"Kişisel Değerlendirme veya Öğrenci Eğitimi adımları gelir."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:18
 msgid ""
 "Configuration: For this step to be configured you must specify the number of"
 " peer reviews a student will be assessed with, and the number of peer a "
 "student must grade. Additional options can be specified."
-msgstr "Yapılandırma: Bu adımın yapılandırılması için, bir öğrencinin değerlendirileceği akran değerlendirmesi sayısını ve bir öğrencinin not vermesi gereken akran sayısını belirtmelisiniz. Ek seçenekler belirtilebilir."
+msgstr ""
+"Yapılandırma: Bu adımın yapılandırılması için, bir öğrencinin "
+"değerlendirileceği akran değerlendirmesi sayısını ve bir öğrencinin not "
+"vermesi gereken akran sayısını belirtmelisiniz. Ek seçenekler "
+"belirtilebilir."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:23
 msgid "View Options & Configuration"
@@ -450,7 +531,9 @@ msgstr "Geçer Not"
 msgid ""
 "Specify the number of peer assessments that each learner must complete. "
 "Valid numbers are 1 to 99."
-msgstr "Her öğrencinin tamamlaması gereken kişi değerlendirme sayısını belirtin. Geçerli sayılar 1'den 99'a kadar."
+msgstr ""
+"Her öğrencinin tamamlaması gereken kişi değerlendirme sayısını belirtin. "
+"Geçerli sayılar 1'den 99'a kadar."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:36
 msgid "Graded By"
@@ -460,7 +543,9 @@ msgstr "Notlandıran"
 msgid ""
 "Specify the number of learners that each response must be assessed by. Valid"
 " numbers are 1 to 99."
-msgstr "Her yanıt için değerlendirmesi gerekli öğrenci sayısını belirtin. Geçerli sayılar 1 ile 99 arasındadır."
+msgstr ""
+"Her yanıt için değerlendirmesi gerekli öğrenci sayısını belirtin. Geçerli "
+"sayılar 1 ile 99 arasındadır."
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:43
 msgid "Enable Flexible Peer Grade Averaging"
@@ -470,7 +555,8 @@ msgstr "Esnek Akran Derecesi Ortalamasını Etkinleştir"
 #, python-format
 msgid ""
 "When enabled, learners who have received at least 30%% of the required \\"
-msgstr "Etkinleştirildiğinde, gerekli olanın en az %%30'unu almış olan öğrenciler \\"
+msgstr ""
+"Etkinleştirildiğinde, gerekli olanın en az %%30'unu almış olan öğrenciler \\"
 
 #: templates/legacy/edit/oa_edit_peer_assessment.html:53
 msgid ""
@@ -478,6 +564,32 @@ msgid ""
 "under the Open Response Assessment Settings card on the Pages & Resources "
 "studio page."
 msgstr ""
+"Bu özellik ders düzeyindeki ayar tarafından etkinleştirilmektedir. Sayfalar & Kaynaklar Studio sayfasındaki Açık Yanıt Değerlendirme Ayarları kartının altında bulunabilir.\n"
+"\n"
+"Bu özellik ders düzeyinde bir ayarla etkinleştirilmektedir. Sayfalar & Kaynaklar Studio sayfasındaki Açık Yanıt Değerlendirme Ayarları kartının altında bulunabilir."
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:60
+msgid "Grading strategy for the peer assessment"
+msgstr "Akran değerlendirmesi için not verme stratejisi"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:62
+msgid "Mean"
+msgstr "Ortalama"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:63
+msgid "Median (default)"
+msgstr "Medyan (varsayılan)"
+
+#: templates/legacy/edit/oa_edit_peer_assessment.html:66
+msgid ""
+"Select the preferred grading strategy for the peer assessment. By default, "
+"the median across all peer reviews is used to calculate the final grade. If "
+"you select the mean, the average of all peer reviews will be used."
+msgstr ""
+"Akran değerlendirmesi için tercih edilen not verme stratejisini seçin. "
+"Varsayılan olarak, tüm akran incelemelerindeki medyan, final notu hesaplamak"
+" için kullanılır. Ortalamayı seçerseniz, tüm akran değerlendirmelerinin "
+"ortalaması kullanılacaktır."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:5
 msgid "Peer Assessment Deadlines"
@@ -495,7 +607,9 @@ msgstr "Başlama Saati"
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing peer responses."
-msgstr "Öğrencilerin akran yanıtlarını değerlendirmeye başlayabilecekleri tarih ve saat."
+msgstr ""
+"Öğrencilerin akran yanıtlarını değerlendirmeye başlayabilecekleri tarih ve "
+"saat."
 
 #: templates/legacy/edit/oa_edit_peer_assessment_schedule.html:31
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:31
@@ -520,11 +634,13 @@ msgstr "Görev yayımlandıktan sonra sufleyi silemezsiniz."
 msgid ""
 "Prompts. Replace the sample text with your own text. For more information, "
 "see the ORA documentation."
-msgstr "Sufleler. Örnek metni kendi metninizle değiştirin. Daha fazla bilgi için, ORA belgelendirmesine bakın."
+msgstr ""
+"Sufleler. Örnek metni kendi metninizle değiştirin. Daha fazla bilgi için, "
+"ORA belgelendirmesine bakın."
 
 #: templates/legacy/edit/oa_edit_prompts.html:22
 msgid "Add Prompt"
-msgstr "Sufle Ekle"
+msgstr "Komut Ekle"
 
 #: templates/legacy/edit/oa_edit_rubric.html:14
 msgid ""
@@ -532,7 +648,11 @@ msgid ""
 "Each option has a point value. This template contains two sample criteria "
 "and their options. Replace the sample text with your own text. For more "
 "information, see the ORA documentation."
-msgstr "Dereceli Puanlama Anahtarları ölçütlerden oluşmaktadır, daima bir ya da daha fazla seçenek içerir. Her seçeneğin bir puan değeri vardır. Bu şablon iki örnek ölçüt ve seçeneklerini içerir. Kendi metniniz ile örnek metni değiştiriniz. Daha fazla bilgi için, ORA belgelendirmesine bakınız."
+msgstr ""
+"Dereceli Puanlama Anahtarları ölçütlerden oluşmaktadır, daima bir ya da daha"
+" fazla seçenek içerir. Her seçeneğin bir puan değeri vardır. Bu şablon iki "
+"örnek ölçüt ve seçeneklerini içerir. Kendi metniniz ile örnek metni "
+"değiştiriniz. Daha fazla bilgi için, ORA belgelendirmesine bakınız."
 
 #: templates/legacy/edit/oa_edit_rubric.html:29
 msgid "Add Criterion"
@@ -550,7 +670,9 @@ msgstr "Geri Bildirim Yönergeleri"
 msgid ""
 "Encourage learners to provide feedback on the response they have graded. You"
 " can replace the sample text with your own."
-msgstr "Öğrencileri notlandırıldıkları cevaplardan geri bildirim sağlamak için teşvik ediniz. Örnek metni kendi metniniz ile değiştirebilirsiniz."
+msgstr ""
+"Öğrencileri notlandırıldıkları cevaplardan geri bildirim sağlamak için "
+"teşvik ediniz. Örnek metni kendi metniniz ile değiştirebilirsiniz."
 
 #: templates/legacy/edit/oa_edit_rubric.html:49
 msgid "Default Feedback Text"
@@ -560,57 +682,56 @@ msgstr "Varsayılan Geri Bildirim Metni"
 msgid ""
 "Enter feedback text that learners will see before they enter their own "
 "feedback. Use this text to show learners a good example peer assessment."
-msgstr "Öğrencilerin kendi geri bildirimlerini girmeden önce görebilecekleri geri bildirim metni giriniz. Bu metni iyi bir kişi değerlendirmesi örneği olarak göstermek için kullanınız."
+msgstr ""
+"Öğrencilerin kendi geri bildirimlerini girmeden önce görebilecekleri geri "
+"bildirim metni giriniz. Bu metni iyi bir kişi değerlendirmesi örneği olarak "
+"göstermek için kullanınız."
 
 #: templates/legacy/edit/oa_edit_schedule.html:5
 msgid "Deadlines Configuration"
-msgstr ""
+msgstr "Son Teslim Tarihi Yapılandırması"
 
 #: templates/legacy/edit/oa_edit_schedule.html:9
 msgid "Select a deadline configuration option"
-msgstr ""
+msgstr "Son tarih yapılandırma seçeneğini seçin"
 
-#: templates/legacy/edit/oa_edit_schedule.html:13
-msgid " NEW"
-msgstr ""
-
-#: templates/legacy/edit/oa_edit_schedule.html:19
+#: templates/legacy/edit/oa_edit_schedule.html:14
 msgid "Configure deadlines manually"
-msgstr ""
+msgstr "Son teslim tarihlerini elle yapılandırın"
 
-#: templates/legacy/edit/oa_edit_schedule.html:23
+#: templates/legacy/edit/oa_edit_schedule.html:18
 msgid "Match deadlines to the subsection due date"
-msgstr ""
+msgstr "Son tarihleri alt bölümün son tarihiyle eşleştirin"
 
-#: templates/legacy/edit/oa_edit_schedule.html:27
+#: templates/legacy/edit/oa_edit_schedule.html:22
 msgid "Match deadlines to the course end date"
-msgstr ""
+msgstr "Son teslim tarihlerini dersin bitiş tarihiyle eşleştirin"
 
-#: templates/legacy/edit/oa_edit_schedule.html:30
+#: templates/legacy/edit/oa_edit_schedule.html:25
 msgid "Learn more about open response date settings"
-msgstr ""
+msgstr "Açık yanıt tarihi ayarları hakkında daha fazla bilgi edinin"
 
-#: templates/legacy/edit/oa_edit_schedule.html:40
+#: templates/legacy/edit/oa_edit_schedule.html:35
 msgid "Response Start Date"
 msgstr "Cevaplama için Başlangıç Tarihi"
 
-#: templates/legacy/edit/oa_edit_schedule.html:53
+#: templates/legacy/edit/oa_edit_schedule.html:48
 msgid "Response Start Time"
 msgstr "Cevaplama için Başlangıç Zamanı"
 
-#: templates/legacy/edit/oa_edit_schedule.html:62
+#: templates/legacy/edit/oa_edit_schedule.html:57
 msgid "The date and time when learners can begin submitting responses."
 msgstr "Öğrencilerin cevaplarını yüklemeye başladığı zamanki tarih ve zaman."
 
-#: templates/legacy/edit/oa_edit_schedule.html:70
+#: templates/legacy/edit/oa_edit_schedule.html:65
 msgid "Response Due Date"
 msgstr "Cevap Teslim Tarihi"
 
-#: templates/legacy/edit/oa_edit_schedule.html:83
+#: templates/legacy/edit/oa_edit_schedule.html:78
 msgid "Response Due Time"
 msgstr "Cevap Teslim Zamanı"
 
-#: templates/legacy/edit/oa_edit_schedule.html:92
+#: templates/legacy/edit/oa_edit_schedule.html:87
 msgid "The date and time when learners can no longer submit responses."
 msgstr "Öğrencilerin artık yanıtlarını yükleyemediği tarih ve zaman."
 
@@ -622,7 +743,9 @@ msgstr "Adım: Öz Değerlendirme"
 msgid ""
 "Self Assessment asks learners to grade their own submissions against the "
 "rubric."
-msgstr "Öz Değerlendirme, öğrencilerden kendi gönderimlerini dereceli puanlama anahtarına göre derecelendirmelerini ister."
+msgstr ""
+"Öz Değerlendirme, öğrencilerden kendi gönderimlerini dereceli puanlama "
+"anahtarına göre derecelendirmelerini ister."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:5
 msgid "Self Assessment Deadlines"
@@ -630,11 +753,14 @@ msgstr "Öz Değerlendirme Son Tarihleri"
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:27
 msgid "The date and time when learners can begin assessing their responses."
-msgstr "Öğrencilerin kendi yanıtlarını değerlendirmeye başlayabilecekleri tarih ve saat."
+msgstr ""
+"Öğrencilerin kendi yanıtlarını değerlendirmeye başlayabilecekleri tarih ve "
+"saat."
 
 #: templates/legacy/edit/oa_edit_self_assessment_schedule.html:48
 msgid "The date and time when all self assessments must be complete."
-msgstr "Tüm kendi kendine değerlendirmelerin tamamlanması gereken tarih ve saat."
+msgstr ""
+"Tüm kendi kendine değerlendirmelerin tamamlanması gereken tarih ve saat."
 
 #: templates/legacy/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
@@ -644,7 +770,10 @@ msgstr "Adım: Personel Değerlendirme"
 msgid ""
 "Staff Assessment gates sets the final grade for students if enabled with "
 "other steps, though it can also be used as a standalone step."
-msgstr "Personel Değerlendirme kapıları, diğer adımlarla birlikte etkinleştirilirse öğrenciler için son notu belirler, ancak bağımsız bir adım olarak da kullanılabilir."
+msgstr ""
+"Personel Değerlendirme kapıları, diğer adımlarla birlikte etkinleştirilirse "
+"öğrenciler için son notu belirler, ancak bağımsız bir adım olarak da "
+"kullanılabilir."
 
 #: templates/legacy/edit/oa_edit_student_training.html:9
 msgid "Step: Learner Training"
@@ -655,7 +784,11 @@ msgid ""
 "Learner Training is used to help students practice grading a simulated peer "
 "submission in order to train them on the rubric and ensure learner's "
 "understand the rubric for either Self or Peer Assessment steps."
-msgstr "Öğrenci Eğitimi, öğrencileri dereceli puan anahtarı konusunda eğitmek ve öğrencinin Öz Değerlendirme veya Akran Değerlendirmesi adımları için dereceli puan anahtarını anlamasını sağlamak için simüle edilmiş bir akran sunumuna not verme alıştırması yapmalarına yardımcı olmak için kullanılır."
+msgstr ""
+"Öğrenci Eğitimi, öğrencileri dereceli puan anahtarı konusunda eğitmek ve "
+"öğrencinin Öz Değerlendirme veya Akran Değerlendirmesi adımları için "
+"dereceli puan anahtarını anlamasını sağlamak için simüle edilmiş bir akran "
+"sunumuna not verme alıştırması yapmalarına yardımcı olmak için kullanılır."
 
 #: templates/legacy/edit/oa_edit_student_training.html:17
 msgid ""
@@ -663,7 +796,11 @@ msgid ""
 "more graded sample responses. Learners must then match this instructor score"
 " to advance and are provided feedback when their score doesn't match the "
 "sample response."
-msgstr "Yapılandırma: Bu adımın tam olarak yapılandırılması için bir veya daha fazla derecelendirilmiş örnek yanıt sağlamanız gerekir. Öğrenciler daha sonra ilerlemek için bu eğitmen puanıyla eşleşmelidir ve puanları örnek yanıtla eşleşmediğinde onlara geri bildirim verilir."
+msgstr ""
+"Yapılandırma: Bu adımın tam olarak yapılandırılması için bir veya daha fazla"
+" derecelendirilmiş örnek yanıt sağlamanız gerekir. Öğrenciler daha sonra "
+"ilerlemek için bu eğitmen puanıyla eşleşmelidir ve puanları örnek yanıtla "
+"eşleşmediğinde onlara geri bildirim verilir."
 
 #: templates/legacy/edit/oa_edit_student_training.html:22
 msgid "View / Add Sample Responses"
@@ -683,7 +820,13 @@ msgid ""
 "search by the Block ID. Note that cloning is one-way, meaning changes made "
 "after cloning will only affect the rubric being modified, and will not "
 "modify any rubric it was cloned from."
-msgstr "Yayınlanmış veya yayınlanmamış mevcut bir taslaktan dereceli puanlama anahtarını klonlamak için Block kimliğine göre arama yapabilirsiniz. Klonlamanın tek yönlü olduğunu, yani klonlamadan sonra yapılan değişikliklerin yalnızca değiştirilen dereceli puanlama anahtarını etkileyeceğini ve klonlandığı puanlama anahtarını değiştirmeyeceğini unutmayın."
+msgstr ""
+"Yayınlanmış veya yayınlanmamış mevcut bir taslaktan dereceli puanlama "
+"anahtarını klonlamak için Block kimliğine göre arama yapabilirsiniz. "
+"Klonlamanın tek yönlü olduğunu, yani klonlamadan sonra yapılan "
+"değişikliklerin yalnızca değiştirilen dereceli puanlama anahtarını "
+"etkileyeceğini ve klonlandığı puanlama anahtarını değiştirmeyeceğini "
+"unutmayın."
 
 #: templates/legacy/edit/oa_rubric_reuse.html:9
 msgid "Block ID For this ORA:"
@@ -703,7 +846,8 @@ msgstr "Klonla"
 
 #: templates/legacy/edit/oa_rubric_reuse.html:37
 msgid "Rubric Successfully Cloned from Block ID: "
-msgstr "Dereceli Puanlama Anahtarı şu kimlikli Block'tan başarıyla klonlandı: "
+msgstr ""
+"Dereceli Puanlama Anahtarı şu kimlikli Block'tan başarıyla klonlandı: "
 
 #: templates/legacy/edit/oa_training_example.html:7
 msgid "Scored Response"
@@ -745,8 +889,8 @@ msgid_plural ""
 "\n"
 "                      %(assessment_title)s - %(points)s points\n"
 "                  "
-msgstr[0] "\n                      %(assessment_title)s - %(points)s puan\n                  "
-msgstr[1] "\n                      %(assessment_title)s - %(points)s puan\n                  "
+msgstr[0] ""
+msgstr[1] ""
 
 #: templates/legacy/grade/oa_assessment_title.html:24
 #, python-format
@@ -768,7 +912,10 @@ msgid ""
 "\n"
 "                                        %(points_earned)s out of %(points_possible)s\n"
 "                                    "
-msgstr "\n                                        %(points_possible)s üzerinden %(points_earned)s\n                                    "
+msgstr ""
+"\n"
+"                                        %(points_possible)s üzerinden %(points_earned)s\n"
+"                                    "
 
 #: templates/legacy/grade/oa_grade_cancelled.html:38
 msgid "Your submission has been cancelled."
@@ -780,7 +927,10 @@ msgid ""
 "\n"
 "                                            %(points_earned)s out of %(points_possible)s\n"
 "                                        "
-msgstr "\n                                             %(points_possible)s üzerinden%(points_earned)s\n                                        "
+msgstr ""
+"\n"
+"                                             %(points_possible)s üzerinden%(points_earned)s\n"
+"                                        "
 
 #: templates/legacy/grade/oa_grade_complete.html:38
 #: templates/legacy/response/oa_response.html:29
@@ -842,19 +992,25 @@ msgstr "Geri Bildirim Gönderme"
 msgid ""
 "Your feedback has been submitted. Course staff will be able to see this "
 "feedback when they review course records."
-msgstr "Geri bildiriminiz yüklendi. Ders personeli ders kayıtlarını gözden geçirdiği zaman bu geri bildirimi görebilecek."
+msgstr ""
+"Geri bildiriminiz yüklendi. Ders personeli ders kayıtlarını gözden geçirdiği"
+" zaman bu geri bildirimi görebilecek."
 
 #: templates/legacy/grade/oa_grade_complete.html:140
 msgid ""
 "Course staff will be able to see any feedback that you provide here when "
 "they review course records."
-msgstr "Ders görevlileri ders kayıtlarını gözden geçirdiğinde buraya girdiğiniz herhangi bir geri bildirimi görebilecek."
+msgstr ""
+"Ders görevlileri ders kayıtlarını gözden geçirdiğinde buraya girdiğiniz "
+"herhangi bir geri bildirimi görebilecek."
 
 #: templates/legacy/grade/oa_grade_complete.html:146
 msgid ""
 "Select the statements below that best reflect your experience with peer "
 "assessments."
-msgstr "Akran değerlendirmeleriyle ilgili deneyiminizi aşağıdaki en iyi yansıtan ifadeleri seçin."
+msgstr ""
+"Akran değerlendirmeleriyle ilgili deneyiminizi aşağıdaki en iyi yansıtan "
+"ifadeleri seçin."
 
 #: templates/legacy/grade/oa_grade_complete.html:155
 msgid "These assessments were useful."
@@ -866,7 +1022,9 @@ msgstr "Bu değerlendirmeler faydalı değildi."
 
 #: templates/legacy/grade/oa_grade_complete.html:173
 msgid "I disagree with one or more of the peer assessments of my response."
-msgstr "Benim yanıtlarımın akran değerlendirmelerinin bir ya da daha fazlasına katılmıyorum."
+msgstr ""
+"Benim yanıtlarımın akran değerlendirmelerinin bir ya da daha fazlasına "
+"katılmıyorum."
 
 #: templates/legacy/grade/oa_grade_complete.html:182
 msgid "Some comments I received were inappropriate."
@@ -875,7 +1033,8 @@ msgstr "Aldığım bazı yorumlar uygunsuzdu."
 #: templates/legacy/grade/oa_grade_complete.html:187
 msgid ""
 "Provide feedback on the grade or comments that you received from your peers."
-msgstr "Kişilerden aldığınız not ya da yorumlar hakkında geri bildirim sağlayın."
+msgstr ""
+"Kişilerden aldığınız not ya da yorumlar hakkında geri bildirim sağlayın."
 
 #: templates/legacy/grade/oa_grade_complete.html:190
 msgid "I feel the feedback I received was..."
@@ -915,7 +1074,11 @@ msgid ""
 "need to be done on your response. When the assessments of your response are "
 "complete, you will see feedback from everyone who assessed your response, "
 "and you will receive your final grade."
-msgstr "Görevinizdeki adımları tamamladınız, ancak yanıtınıza dair bazı değerlendirmelerin tamamlanması gerekiyor. Yanıtınızın değerlendirmesi tamamlandığında, değerlendirmeyi yapan eğitmenlerden geri bildirimlerin yanı sıra notunuzu alacaksınız."
+msgstr ""
+"Görevinizdeki adımları tamamladınız, ancak yanıtınıza dair bazı "
+"değerlendirmelerin tamamlanması gerekiyor. Yanıtınızın değerlendirmesi "
+"tamamlandığında, değerlendirmeyi yapan eğitmenlerden geri bildirimlerin yanı"
+" sıra notunuzu alacaksınız."
 
 #: templates/legacy/instructor_dashboard/oa_grade_available_responses.html:15
 #: templates/legacy/staff_area/oa_staff_area.html:16
@@ -928,7 +1091,9 @@ msgstr "Notlandırılabilir Yanıtlar"
 msgid ""
 "Grade Available Responses is unavailable. This item is not configured for "
 "Staff Assessment."
-msgstr "Notlandırılabilir Yanıtlar kullanılamaz. Bu öğe, Personel Değerlendirmesi için yapılandırılmadı."
+msgstr ""
+"Notlandırılabilir Yanıtlar kullanılamaz. Bu öğe, Personel Değerlendirmesi "
+"için yapılandırılmadı."
 
 #: templates/legacy/instructor_dashboard/oa_listing.html:6
 msgid "Please wait"
@@ -942,7 +1107,9 @@ msgstr "Bekleyen Adım Ayrıntıları"
 msgid ""
 "Waiting Step details view is unavailable. This item is not configured for "
 "peer assessments."
-msgstr "Bekleyen Adım ayrıntıları görünümü kullanılamıyor. Bu öğe, Akran Değerlendirmesi için yapılandırılmadı."
+msgstr ""
+"Bekleyen Adım ayrıntıları görünümü kullanılamıyor. Bu öğe, Akran "
+"Değerlendirmesi için yapılandırılmadı."
 
 #: templates/legacy/leaderboard/oa_leaderboard_show.html:20
 #, python-format
@@ -953,69 +1120,88 @@ msgstr "%(num_points)s puan"
 #: templates/legacy/peer/oa_peer_assessment.html:84
 #: templates/legacy/peer/oa_peer_turbo_mode.html:53
 msgid "Your peer's response to the prompt above"
-msgstr ""
+msgstr "Akranınızın yukarıdaki soruya verdiği yanıt"
 
 #: templates/legacy/leaderboard/oa_leaderboard_waiting.html:19
 msgid ""
 "After you complete all the steps of this assignment, you can see the top-"
 "scoring responses from your peers."
-msgstr "Bu görevin tüm adımlarını tamamladıktan sonra, kişilerden gelen en yüksek puan alan cevapları görebilirsiniz."
+msgstr ""
+"Bu görevin tüm adımlarını tamamladıktan sonra, kişilerden gelen en yüksek "
+"puan alan cevapları görebilirsiniz."
 
 #: templates/legacy/message/oa_message_cancelled.html:8
 msgid ""
 "Your team’s submission has been cancelled. Your team will receive a grade of"
 " zero unless course staff resets your assessment to allow the team to "
 "resubmit a response."
-msgstr "Takımınızın gönderimi iptal edildi. Ders personeli, takımın yeniden yanıt göndermesine izin vermek için değerlendirmenizi sıfırlamadığı sürece takımınız sıfır notu alacaktır."
+msgstr ""
+"Takımınızın gönderimi iptal edildi. Ders personeli, takımın yeniden yanıt "
+"göndermesine izin vermek için değerlendirmenizi sıfırlamadığı sürece "
+"takımınız sıfır notu alacaktır."
 
 #: templates/legacy/message/oa_message_cancelled.html:10
 msgid ""
 "Your submission has been cancelled. You will receive a grade of zero unless "
 "course staff resets your assessment to allow you to resubmit a response."
-msgstr "Gönderiminiz iptal edildi. Ders personeli yeniden yanıt göndermenize izin vermek için değerlendirmenizi sıfırlamadığı sürece sıfır notu alacaksınız."
+msgstr ""
+"Gönderiminiz iptal edildi. Ders personeli yeniden yanıt göndermenize izin "
+"vermek için değerlendirmenizi sıfırlamadığı sürece sıfır notu alacaksınız."
 
 #: templates/legacy/message/oa_message_closed.html:8
 msgid ""
 "This task is not yet available. Check back to complete the assignment once "
 "this section has opened."
-msgstr "Bu görev henüz mevcut değil. Bu bölüm açıldığında görevi tamamlamak için tekrar kontrol edin."
+msgstr ""
+"Bu görev henüz mevcut değil. Bu bölüm açıldığında görevi tamamlamak için "
+"tekrar kontrol edin."
 
 #: templates/legacy/message/oa_message_closed.html:10
 msgid ""
 "This assignment has closed. One or more deadlines for this assignment have "
 "passed. You will receive an incomplete grade for this assignment."
-msgstr "Bu görev kapandı. Bu görev için bir ya da daha fazla bitiş tarihi geçti. Bu ödev için tamamlanmamış not alacaksınız."
+msgstr ""
+"Bu görev kapandı. Bu görev için bir ya da daha fazla bitiş tarihi geçti. Bu "
+"ödev için tamamlanmamış not alacaksınız."
 
 #: templates/legacy/message/oa_message_complete.html:8
 msgid ""
 "You have completed this assignment. Your final grade will be available when "
 "the assessments of your response are complete."
-msgstr "Bu görevi tamamladınız. Final notunuz cevabınızın değerlendirmeleri tamamlandığında görülebilir olacak."
+msgstr ""
+"Bu görevi tamamladınız. Final notunuz cevabınızın değerlendirmeleri "
+"tamamlandığında görülebilir olacak."
 
 #: templates/legacy/message/oa_message_complete.html:10
 msgid ""
 "You have completed this assignment. Review your grade and your assessment "
 "details."
-msgstr "Bu görevi tamamladınız. Notunuzu ve görev ayrıntılarınızı gözden geçirin."
+msgstr ""
+"Bu görevi tamamladınız. Notunuzu ve görev ayrıntılarınızı gözden geçirin."
 
 #: templates/legacy/message/oa_message_incomplete.html:9
 msgid ""
 "This assignment is in progress. Learner training will close soon. Complete "
 "the learner training step to move on."
-msgstr "Bu görev devam ediyor. Öğrenci alıştırması yakında sona erecek. İlerlemek için öğrenci alıştırmasını tamamlayın."
+msgstr ""
+"Bu görev devam ediyor. Öğrenci alıştırması yakında sona erecek. İlerlemek "
+"için öğrenci alıştırmasını tamamlayın."
 
 #: templates/legacy/message/oa_message_incomplete.html:11
 msgid ""
 "This assignment is in progress. Complete the learner training step to move "
 "on."
-msgstr "Bu görev devam ediyor. İlerlemek için öğrenci alıştırmasını tamamlayın."
+msgstr ""
+"Bu görev devam ediyor. İlerlemek için öğrenci alıştırmasını tamamlayın."
 
 #: templates/legacy/message/oa_message_incomplete.html:15
 #: templates/legacy/message/oa_message_incomplete.html:33
 msgid ""
 "This assignment is in progress. Check back later when the assessment period "
 "has started."
-msgstr "Bu görev devam ediyor. Değerlendirme dönemi başladığında tekrar kontrol edin."
+msgstr ""
+"Bu görev devam ediyor. Değerlendirme dönemi başladığında tekrar kontrol "
+"edin."
 
 #: templates/legacy/message/oa_message_incomplete.html:20
 #, python-format
@@ -1093,7 +1279,10 @@ msgid ""
 "\n"
 "                    This assignment has several steps. In the first step, you'll provide a response to the prompt. The other steps appear below the %(start_tag)sYour Response%(end_tag)s field.\n"
 "                "
-msgstr "\n                    Bu görev birkaç adım içeriyor. İlk adımda, soruya cevap vereceksiniz. Diğer adımlar %(start_tag)sCevabınız%(end_tag)s alanının altında görünecek.\n                "
+msgstr ""
+"\n"
+"                    Bu görev birkaç adım içeriyor. İlk adımda, soruya cevap vereceksiniz. Diğer adımlar %(start_tag)sCevabınız%(end_tag)s alanının altında görünecek.\n"
+"                "
 
 #: templates/legacy/message/oa_message_unavailable.html:4
 msgid "Instructions Unavailable"
@@ -1108,10 +1297,12 @@ msgid ""
 "This assignment has several steps. In the first step, you'll provide a "
 "response to the prompt. The other steps appear below the Your Response "
 "field."
-msgstr "Bu ödev birkaç adıma sahip. İlk adımda, soruya cevap vereceğiz. Diğer adımlar Cevabınız alanı altında görünecektir."
+msgstr ""
+"Bu ödev birkaç adıma sahip. İlk adımda, soruya cevap vereceğiz. Diğer "
+"adımlar Cevabınız alanı altında görünecektir."
 
 #: templates/legacy/oa_base.html:37 templates/openassessmentblock/base.html:56
-#: templates/openassessmentblock/base.html:100
+#: templates/openassessmentblock/base.html:105
 msgid "Loading"
 msgstr "Yüklüyor..."
 
@@ -1157,7 +1348,11 @@ msgid ""
 "Caution: These files were uploaded by another course learner and have not "
 "been verified, screened, approved, reviewed, or endorsed by the site "
 "administrator. If you access the files, you do so at your own risk.)"
-msgstr "Dikkat: Bu dosyalar başka bir ders öğrencisi tarafından yüklendi ve site yöneticisi tarafından doğrulanmadı, görüntülenmedi, uygun bulunmadı, gözden geçirilmedi veya tavsiye edilmedi. Dosyalara erişime karar verirseniz, bu kendi sorumluluğunuzdadır.)"
+msgstr ""
+"Dikkat: Bu dosyalar başka bir ders öğrencisi tarafından yüklendi ve site "
+"yöneticisi tarafından doğrulanmadı, görüntülenmedi, uygun bulunmadı, gözden "
+"geçirilmedi veya tavsiye edilmedi. Dosyalara erişime karar verirseniz, bu "
+"kendi sorumluluğunuzdadır.)"
 
 #: templates/legacy/peer/oa_peer_assessment.html:36
 msgid "Assess Peers"
@@ -1172,7 +1367,10 @@ msgid ""
 "\n"
 "            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
-msgstr "\n            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "due August 13th, 2014 00:00 UTC (in 5 days
@@ -1183,7 +1381,10 @@ msgid ""
 "\n"
 "            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
-msgstr "\n            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_peer\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #: templates/legacy/peer/oa_peer_assessment.html:61
 #, python-format
@@ -1191,7 +1392,10 @@ msgid ""
 "\n"
 "                    In Progress (%(review_number)s of %(num_must_grade)s)\n"
 "                "
-msgstr "\n                    İşlem Sürüyor (%(num_must_grade)s'nın %(review_number)s)\n                "
+msgstr ""
+"\n"
+"                    İşlem Sürüyor (%(num_must_grade)s'nın %(review_number)s)\n"
+"                "
 
 #: templates/legacy/peer/oa_peer_assessment.html:75
 #: templates/legacy/peer/oa_peer_turbo_mode.html:45
@@ -1228,14 +1432,20 @@ msgid ""
 "\n"
 "            Incomplete (%(num_graded)s of %(num_must_grade)s)\n"
 "        "
-msgstr "\n            Eksik (%(num_must_grade)s 'nın %(num_graded)s)\n        "
+msgstr ""
+"\n"
+"            Eksik (%(num_must_grade)s 'nın %(num_graded)s)\n"
+"        "
 
 #: templates/legacy/peer/oa_peer_closed.html:35
 msgid ""
 "The due date for this step has passed. This step is now closed. You can no "
 "longer complete peer assessments or continue with this assignment, and you "
 "will receive a grade of Incomplete."
-msgstr "Teslim tarihinden ötürü bu adım geçmişte kaldı. Bu adım şu an kapalı. Artık kişi değerlendirmesini tamamlayamaz ya da bu ödev ile devam edemezsiniz ve eksik not alacaksınız."
+msgstr ""
+"Teslim tarihinden ötürü bu adım geçmişte kaldı. Bu adım şu an kapalı. Artık "
+"kişi değerlendirmesini tamamlayamaz ya da bu ödev ile devam edemezsiniz ve "
+"eksik not alacaksınız."
 
 #: templates/legacy/peer/oa_peer_complete.html:13
 msgid "Completed"
@@ -1248,7 +1458,10 @@ msgid ""
 "You have successfully completed all of the required peer assessments for "
 "this assignment. You may assess additional peer responses if you want to. "
 "Completing additional assessments will not affect your final grade."
-msgstr "Bu görev için gerekli tüm kişi değerlendirmelerini başarıyla tamamladınız. Eğer isterseniz, ek olarak kişi cevaplarını değerlendirebilirsiniz. Ek değerlendirmeleri tamamlamanın final notunuza bir etkisi olmayacaktır."
+msgstr ""
+"Bu görev için gerekli tüm kişi değerlendirmelerini başarıyla tamamladınız. "
+"Eğer isterseniz, ek olarak kişi cevaplarını değerlendirebilirsiniz. Ek "
+"değerlendirmeleri tamamlamanın final notunuza bir etkisi olmayacaktır."
 
 #: templates/legacy/peer/oa_peer_complete.html:36
 msgid "We could not retrieve additional submissions for assessment"
@@ -1265,13 +1478,18 @@ msgid ""
 "\n"
 "        Complete (%(num_graded)s)\n"
 "      "
-msgstr "\n        Tamamlanmış (%(num_graded)s)\n      "
+msgstr ""
+"\n"
+"        Tamamlanmış (%(num_graded)s)\n"
+"      "
 
 #: templates/legacy/peer/oa_peer_turbo_mode_waiting.html:38
 msgid ""
 "All submitted peer responses have been assessed. Check back later to see if "
 "more learners have submitted responses."
-msgstr "Tüm gönderilen kişi cevapları değerlendirildi. Daha çok öğrencinin cevap gönderdiğini görmek istiyorsanız daha sonra tekrar kontrol edin."
+msgstr ""
+"Tüm gönderilen kişi cevapları değerlendirildi. Daha çok öğrencinin cevap "
+"gönderdiğini görmek istiyorsanız daha sonra tekrar kontrol edin."
 
 #: templates/legacy/peer/oa_peer_unavailable.html:16
 #: templates/legacy/response/oa_response_unavailable.html:17
@@ -1294,7 +1512,11 @@ msgid ""
 "more learners have submitted responses. You will receive your grade after "
 "you've completed all the steps for this problem and your peers have assessed"
 " your response."
-msgstr "Mevcut tüm kişi cevapları değerlendirildi. Daha fazla öğrencinin cevap gönderip göndermediğini görmek için daha sonra tekrar kontrol edin. Bu problem için bütün adımları tamamladıktan sonra ve akranlarınız cevabınızı değerlendirdikten sonra notunuzu alacaksınız."
+msgstr ""
+"Mevcut tüm kişi cevapları değerlendirildi. Daha fazla öğrencinin cevap "
+"gönderip göndermediğini görmek için daha sonra tekrar kontrol edin. Bu "
+"problem için bütün adımları tamamladıktan sonra ve akranlarınız cevabınızı "
+"değerlendirdikten sonra notunuzu alacaksınız."
 
 #: templates/legacy/response/oa_response.html:27
 msgid "Your Team's Response"
@@ -1309,7 +1531,10 @@ msgid ""
 "\n"
 "            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
-msgstr "\n            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
@@ -1320,7 +1545,10 @@ msgid ""
 "\n"
 "            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
-msgstr "\n            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n            "
+msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline_response\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #: templates/legacy/response/oa_response.html:54
 #: templates/legacy/self/oa_self_assessment.html:56
@@ -1337,6 +1565,9 @@ msgid ""
 "                        Your work will save automatically and you can return to complete your team's response at any time before the due date\n"
 "                      "
 msgstr ""
+"\n"
+"                         Çalışmanız otomatik olarak kaydedilecek ve son tarihten önce istediğiniz zaman ekibinizin yanıtını tamamlamak için geri dönebilirsiniz.\n"
+"                      "
 
 #: templates/legacy/response/oa_response.html:81
 msgid ""
@@ -1344,11 +1575,14 @@ msgid ""
 "                        Your work will save automatically and you can return to complete your team's response at any time.\n"
 "                      "
 msgstr ""
+"\n"
+"                         Çalışmanız otomatik olarak kaydedilecek ve istediğiniz zaman ekibinizin yanıtını tamamlamak için geri dönebilirsiniz.\n"
+"                      "
 
 #: templates/legacy/response/oa_response.html:86
 msgid ""
 "After you submit a response on behalf of your team, it cannot be edited."
-msgstr ""
+msgstr "Ekibiniz adına bir yanıt gönderdikten sonra bu yanıt düzenlenemez."
 
 #: templates/legacy/response/oa_response.html:89
 msgid "Enter your response to the prompt."
@@ -1359,24 +1593,32 @@ msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the subsection due date "
 msgstr ""
+"Çalışmanız otomatik olarak kaydedilir ve alt bölümün teslim tarihinden önce "
+"istediğiniz zaman yanıtınızı tamamlamak için geri dönebilirsiniz"
 
 #: templates/legacy/response/oa_response.html:94
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the course ends "
 msgstr ""
+"Çalışmanız otomatik olarak kaydedilir ve ders sona ermeden önce istediğiniz "
+"zaman yanıtınızı tamamlamak için geri dönebilirsiniz "
 
 #: templates/legacy/response/oa_response.html:96
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time before the due date "
 msgstr ""
+"Çalışmanız otomatik olarak kaydedilir ve yanıtınızı son tarihten önce "
+"istediğiniz zaman tamamlamak için geri dönebilirsiniz. "
 
 #: templates/legacy/response/oa_response.html:108
 msgid ""
 "Your work will save automatically and you can return to complete your "
 "response at any time."
 msgstr ""
+"Çalışmanız otomatik olarak kaydedilir ve yanıtınızı tamamlamak için "
+"istediğiniz zaman geri dönebilirsiniz."
 
 #: templates/legacy/response/oa_response.html:110
 msgid "After you submit your response, you cannot edit it"
@@ -1384,7 +1626,7 @@ msgstr "Cevabınızı yükledikten sonra, onu düzenleyemezsiniz"
 
 #: templates/legacy/response/oa_response.html:120
 msgid "What will this assignment be graded on?"
-msgstr ""
+msgstr "Bu ödev neye göre notlandırılacak?"
 
 #: templates/legacy/response/oa_response.html:134
 msgid "The prompt for this section"
@@ -1459,7 +1701,7 @@ msgstr "İşleminizi kaydedemedik"
 
 #: templates/legacy/response/oa_response.html:232
 msgid "Status of Your Response"
-msgstr ""
+msgstr "Cevabınızın Durumu"
 
 #: templates/legacy/response/oa_response.html:245
 msgid "File Uploads "
@@ -1472,6 +1714,10 @@ msgid ""
 "                                  descriptions to your files to help your teammates identify them.\n"
 "                              "
 msgstr ""
+"\n"
+"                                   Dosyaları yükleyin ve aşağıda sizin ve takım arkadaşlarınızın yüklediği dosyaları inceleyin. \n"
+"                                   Takım arkadaşlarınızın tanımasına yardımcı olmak için dosyalarınıza açıklamalar eklediğinizden emin olun.\n"
+"                              "
 
 #: templates/legacy/response/oa_response.html:261
 msgid "We could not upload files"
@@ -1493,51 +1739,58 @@ msgstr "Bu gönderi için yüklemek istediğiniz dosyayı seçiniz."
 msgid "Supported file types: "
 msgstr "Desteklene dosya türleri: "
 
-#: templates/legacy/response/oa_response.html:285
+#: templates/legacy/response/oa_response.html:286
 msgid "Upload files"
 msgstr "Dosyaları yükle"
 
-#: templates/legacy/response/oa_response.html:287
+#: templates/legacy/response/oa_response.html:288
 msgid "Upload file"
 msgstr "Dosya yükle"
 
-#: templates/legacy/response/oa_response.html:304
+#: templates/legacy/response/oa_response.html:305
 msgid "This is a team submission."
 msgstr "Bu bir takım gönderimidir."
 
-#: templates/legacy/response/oa_response.html:306
+#: templates/legacy/response/oa_response.html:307
 msgid ""
 "One team member should submit a response with the team’s shared files and a "
 "text response on behalf of the entire team."
 msgstr ""
+"Bir ekip üyesinin, ekibin paylaşılan dosyalarını içeren bir yanıt ve tüm "
+"ekip adına bir metin yanıtı göndermesi gerekir."
 
-#: templates/legacy/response/oa_response.html:308
+#: templates/legacy/response/oa_response.html:309
 msgid ""
 "One team member should submit a response with the team’s shared files on "
 "behalf of the entire team."
 msgstr ""
+"Bir ekip üyesinin, tüm ekip adına ekibin paylaşılan dosyalarını içeren bir "
+"yanıt göndermesi gerekir."
 
-#: templates/legacy/response/oa_response.html:310
+#: templates/legacy/response/oa_response.html:311
 msgid ""
 "One team member should submit a text response on behalf of the entire team."
-msgstr ""
+msgstr "Bir ekip üyesinin tüm ekip adına metin yanıtı göndermesi gerekir."
 
-#: templates/legacy/response/oa_response.html:312
+#: templates/legacy/response/oa_response.html:313
 msgid "One team member should submit on behalf of the entire team."
-msgstr ""
+msgstr "Bir ekip üyesi tüm ekip adına başvuruda bulunmalıdır."
 
-#: templates/legacy/response/oa_response.html:314
+#: templates/legacy/response/oa_response.html:315
 msgid ""
 "\n"
 "                  Learn more about team assignments here: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
 "                  "
 msgstr ""
+"\n"
+"                  Ekip atamaları hakkında daha fazla bilgiyi burada bulabilirsiniz: (<a target=\"_blank\" href=\"https://support.edx.org/hc/en-us/articles/360000191067-Submit-your-response#h_01FVD8SXM9E5H2DNAG87X25ZHR\">link</a>)\n"
+"                  "
 
-#: templates/legacy/response/oa_response.html:322
+#: templates/legacy/response/oa_response.html:323
 msgid "We could not submit your response"
 msgstr "Cevabınızı gönderemiyoruz."
 
-#: templates/legacy/response/oa_response.html:332
+#: templates/legacy/response/oa_response.html:334
 msgid "Submit your response and move to the next step"
 msgstr "Cevabınızı gönderin ve bir sonraki adıma ilerleyin"
 
@@ -1551,7 +1804,10 @@ msgid ""
 "\n"
 "                                Your submission has been cancelled by %(removed_by_username)s on %(removed_datetime)s\n"
 "                            "
-msgstr "\n                                Gönderiminiz %(removed_by_username)s tarafından %(removed_datetime)s tarihinde iptal edildi\n                            "
+msgstr ""
+"\n"
+"                                Gönderiminiz %(removed_by_username)s tarafından %(removed_datetime)s tarihinde iptal edildi\n"
+"                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:41
 #, python-format
@@ -1559,7 +1815,10 @@ msgid ""
 "\n"
 "                               Your submission was cancelled on %(removed_datetime)s\n"
 "                            "
-msgstr "\n                               Gönderiminiz %(removed_datetime)s tarihinde iptal edildi\n                            "
+msgstr ""
+"\n"
+"                               Gönderiminiz %(removed_datetime)s tarihinde iptal edildi\n"
+"                            "
 
 #: templates/legacy/response/oa_response_cancelled.html:48
 #, python-format
@@ -1567,7 +1826,10 @@ msgid ""
 "\n"
 "                            Comments: %(comments)s\n"
 "                        "
-msgstr "\n                            Yorumlar: %(comments)s\n                        "
+msgstr ""
+"\n"
+"                            Yorumlar: %(comments)s\n"
+"                        "
 
 #: templates/legacy/response/oa_response_closed.html:19
 #: templates/legacy/self/oa_self_closed.html:20
@@ -1581,7 +1843,11 @@ msgid ""
 "longer submit a response or continue with this problem, and you will receive"
 " a grade of Incomplete. If you saved but did not submit a response, the "
 "response appears in the course records."
-msgstr "Teslim tarihinden ötürü bu adım geçmişte kaldı. Bu adım şu an kapalı. Artık cevap gönderemez ya da bu problem ile devam edemezsiniz ve eksik not alacaksınız. Eğer cevabı kaydedip de göndermediyseniz, cevap ders kayıtlarında görülecektir."
+msgstr ""
+"Teslim tarihinden ötürü bu adım geçmişte kaldı. Bu adım şu an kapalı. Artık "
+"cevap gönderemez ya da bu problem ile devam edemezsiniz ve eksik not "
+"alacaksınız. Eğer cevabı kaydedip de göndermediyseniz, cevap ders "
+"kayıtlarında görülecektir."
 
 #: templates/legacy/response/oa_response_graded.html:20
 #: templates/legacy/response/oa_response_submitted.html:20
@@ -1606,6 +1872,8 @@ msgid ""
 "Your response has been submitted. You will receive your grade after all "
 "steps are complete and your response is fully assessed."
 msgstr ""
+"Yanıtınız gönderildi. Tüm adımlar tamamlandıktan ve yanıtınız tam olarak "
+"değerlendirildikten sonra notunuzu alacaksınız."
 
 #: templates/legacy/response/oa_response_submitted.html:34
 #, python-format
@@ -1630,6 +1898,14 @@ msgid ""
 "                        You still need to complete the %(start_tag)sself assessment%(end_tag)s step.\n"
 "                    "
 msgstr ""
+
+#: templates/legacy/response/oa_response_submitted.html:63
+msgid "We could not reset your response"
+msgstr "Yanıtınızı sıfırlayamadık"
+
+#: templates/legacy/response/oa_response_submitted.html:69
+msgid "Reset response and submit again"
+msgstr "Yanıtı sıfırlayıp tekrar gönderin"
 
 #: templates/legacy/response/oa_response_team_already_submitted.html:15
 msgid "Error"
@@ -1660,6 +1936,9 @@ msgid ""
 "               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "           "
 msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
@@ -1671,6 +1950,9 @@ msgid ""
 "               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "           "
 msgstr ""
+"\n"
+"               <span id=\"oa_step_deadline_self\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"           "
 
 #: templates/legacy/self/oa_self_assessment.html:88
 msgid "Submit your assessment"
@@ -1681,9 +1963,12 @@ msgid ""
 "The due date for this step has passed. This step is now closed. You can no "
 "longer complete a self assessment or continue with this assignment, and you "
 "will receive a grade of Incomplete."
-msgstr "Teslim tarihinden ötürü bu adım geçmişte kaldı. Bu adım şu an kapalı. Artık kendi değerlendirmenizi tamamlayamaz ya da bu görev ile devam edemezsiniz ve eksik not alacaksınız."
+msgstr ""
+"Teslim tarihinden ötürü bu adım geçmişte kaldı. Bu adım şu an kapalı. Artık "
+"kendi değerlendirmenizi tamamlayamaz ya da bu görev ile devam edemezsiniz ve"
+" eksik not alacaksınız."
 
-#: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:365
+#: templates/legacy/staff/oa_staff_grade.html:13 xblock/grade_mixin.py:369
 msgid "Staff Grade"
 msgstr "Personel Notu"
 
@@ -1792,7 +2077,10 @@ msgid ""
 "\n"
 "                                        Response for: %(student_username)s\n"
 "                                    "
-msgstr "\n                                        %(student_username)s için cevap\n                                    "
+msgstr ""
+"\n"
+"                                        %(student_username)s için cevap\n"
+"                                    "
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:34
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:24
@@ -1801,7 +2089,7 @@ msgstr "Öğrenci Yanıtı"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:39
 msgid "The teams's response to the prompt above"
-msgstr ""
+msgstr "Takımların yukarıdaki prompta yanıtı"
 
 #: templates/legacy/staff_area/oa_staff_grade_learners_assessment.html:41
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:32
@@ -1829,10 +2117,14 @@ msgstr ""
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:7
 msgid "Override this learner's current grade using the problem's rubric."
 msgstr ""
+"Problemin dereceli değerlendirme anahtarını kullanarak bu öğrencinin mevcut "
+"notunu geçersiz kılın."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:9
 msgid "Override this team's current grade using the problem's rubric."
 msgstr ""
+"Problemin dereceli değerlendirme anahtarını kullanarak bu takımın mevcut "
+"notunu geçersiz kılın."
 
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:27
 msgid "Team Response"
@@ -1841,7 +2133,7 @@ msgstr "Takım Yanıtı"
 #: templates/legacy/staff_area/oa_staff_override_assessment.html:34
 #: templates/legacy/staff_area/oa_student_info.html:59
 msgid "The team's response to the prompt above"
-msgstr ""
+msgstr "Ekibin yukarıdaki prompta yanıtı"
 
 #: templates/legacy/staff_area/oa_student_info.html:11
 #, python-format
@@ -1849,7 +2141,10 @@ msgid ""
 "\n"
 "                    Viewing learner: %(learner)s\n"
 "                "
-msgstr "\n                    Öğrenci görüntüleniyor: %(learner)s\n                "
+msgstr ""
+"\n"
+"                    Öğrenci görüntüleniyor: %(learner)s\n"
+"                "
 
 #: templates/legacy/staff_area/oa_student_info.html:15
 #, python-format
@@ -1857,7 +2152,10 @@ msgid ""
 "\n"
 "                    Viewing team: %(team)s\n"
 "                "
-msgstr "\n                    Takım görüntüleniyor: %(team)s\n                "
+msgstr ""
+"\n"
+"                    Takım görüntüleniyor: %(team)s\n"
+"                "
 
 #: templates/legacy/staff_area/oa_student_info.html:28
 msgid "Learner's Response"
@@ -1873,7 +2171,9 @@ msgid ""
 "\n"
 "                            Learner submission removed by %(removed_by_username)s on %(removed_datetime)s\n"
 "                        "
-msgstr "\nÖğrenci gönderisi %(removed_by_username)s tarafından kaldırıldı. Zaman: %(removed_datetime)s"
+msgstr ""
+"\n"
+"Öğrenci gönderisi %(removed_by_username)s tarafından kaldırıldı. Zaman: %(removed_datetime)s"
 
 #: templates/legacy/staff_area/oa_student_info.html:43
 #, python-format
@@ -1881,7 +2181,10 @@ msgid ""
 "\n"
 "                            Learner submission removed on %(removed_datetime)s\n"
 "                        "
-msgstr "\n                            Öğrenci gönderisi %(removed_datetime)s tarihinde kaldırıldı\n                        "
+msgstr ""
+"\n"
+"                            Öğrenci gönderisi %(removed_datetime)s tarihinde kaldırıldı\n"
+"                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:50
 #, python-format
@@ -1889,7 +2192,9 @@ msgid ""
 "\n"
 "                        Comments: %(comments)s\n"
 "                    "
-msgstr "\nYorumlar: %(comments)s"
+msgstr ""
+"\n"
+"Yorumlar: %(comments)s"
 
 #: templates/legacy/staff_area/oa_student_info.html:71
 msgid "Peer Assessments for This Learner"
@@ -1925,7 +2230,10 @@ msgid ""
 "\n"
 "                            Final grade: %(points_earned)s out of %(points_possible)s\n"
 "                        "
-msgstr "\n                            Final notu: %(points_possible)s üzerinden %(points_earned)s\n                        "
+msgstr ""
+"\n"
+"                            Final notu: %(points_possible)s üzerinden %(points_earned)s\n"
+"                        "
 
 #: templates/legacy/staff_area/oa_student_info.html:119
 msgid "Final Grade Details"
@@ -1941,8 +2249,13 @@ msgid_plural ""
 "\n"
 "                                        %(assessment_label)s - %(points)s points\n"
 "                                    "
-msgstr[0] "\n                                        %(assessment_label)s - %(points)s puan\n                                    "
-msgstr[1] "\n                                        %(assessment_label)s - %(points)s puan\n                                    "
+msgstr[0] ""
+"\n"
+"                                         %(assessment_label)s - %(points)s puan\n"
+"                                    "
+msgstr[1] ""
+"\n"
+"                                         %(assessment_label)s - %(points)s puan"
 
 #: templates/legacy/staff_area/oa_student_info.html:154
 msgid "Feedback Recorded"
@@ -1958,6 +2271,9 @@ msgid ""
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
 msgstr ""
+"Öğrencinin gönderimi akran değerlendirmesinden kaldırılmıştır. Öğrencinin "
+"yanıtını yeniden göndermesine izin vermek için öğrencinin problem durumunu "
+"silmediğiniz sürece öğrenci sıfır notu alır."
 
 #: templates/legacy/staff_area/oa_student_info.html:172
 msgid ""
@@ -1965,6 +2281,9 @@ msgid ""
 "grade of zero unless you delete the a team member’s state for the problem to"
 " allow the team to resubmit a response."
 msgstr ""
+"Takımın gönderimi notlandırmadan kaldırıldı. Ekibin yeniden yanıt "
+"göndermesine olanak sağlamak amacıyla bir ekip üyesinin sorunla ilgili "
+"durumunu silmediğiniz sürece ekip sıfır notu alır."
 
 #: templates/legacy/staff_area/oa_student_info.html:177
 msgid "The problem has not been started."
@@ -1976,21 +2295,23 @@ msgstr "Bu problem tamamlanmadı."
 
 #: templates/legacy/staff_area/oa_student_info.html:193
 msgid "Submit Assessment Grade Override"
-msgstr ""
+msgstr "Değerlendirme Notunu Geçersiz Kılmayı Gönder"
 
 #: templates/legacy/staff_area/oa_student_info.html:195
 msgid "Submit Team Grade Override"
-msgstr ""
+msgstr "Takım Notunu Geçersiz Kılmayı Gönder"
 
 #: templates/legacy/staff_area/oa_student_info.html:204
 msgid "Unable to perform grade override"
-msgstr ""
+msgstr "Not geçersiz kılma işlemi gerçekleştirilemiyor"
 
 #: templates/legacy/staff_area/oa_student_info.html:207
 msgid ""
 "Grades are frozen. Grades are automatically frozen 30 days after the course "
 "end date."
 msgstr ""
+"Notlar donduruldu. Notlar dersin bitiş tarihinden 30 gün sonra otomatik "
+"olarak dondurulur."
 
 #: templates/legacy/staff_area/oa_student_info.html:212
 msgid ""
@@ -1998,14 +2319,17 @@ msgid ""
 "documentation for how to delete the learner’s state for this problem to "
 "allow them to resubmit."
 msgstr ""
+"Bu gönderim iptal edildi ve not alınamıyor. Öğrencinin yeniden göndermesine "
+"izin vermek için bu soruna ilişkin öğrencinin durumunun nasıl silineceğini "
+"öğrenmek için belgelere bakın."
 
 #: templates/legacy/staff_area/oa_student_info.html:230
 msgid "Remove Submission From Peer Grading"
-msgstr ""
+msgstr "Gönderimi Akran Notlandırmasından Kaldır"
 
 #: templates/legacy/staff_area/oa_student_info.html:232
 msgid "Remove Team Submission from Grading"
-msgstr ""
+msgstr "Takım Gönderimini Notlandırmadan Kaldır"
 
 #: templates/legacy/staff_area/oa_student_info.html:242
 msgid "Caution: This Action Cannot Be Undone"
@@ -2016,12 +2340,16 @@ msgid ""
 "Removing a learner's submission cannot be undone and should be done with "
 "caution."
 msgstr ""
+"Bir öğrencinin gönderiminin kaldırılması geri alınamaz ve dikkatli bir "
+"şekilde yapılmalıdır."
 
 #: templates/legacy/staff_area/oa_student_info.html:246
 msgid ""
 "Removing a team's submission cannot be undone and should be done with "
 "caution."
 msgstr ""
+"Bir takımın gönderiminin kaldırılması geri alınamaz ve dikkatli bir şekilde "
+"yapılmalıdır."
 
 #: templates/legacy/staff_area/oa_student_info.html:252
 msgid "Comments:"
@@ -2041,7 +2369,10 @@ msgid ""
 "\n"
 "                            Assessment %(assessment_num)s:\n"
 "                        "
-msgstr "\n                            %(assessment_num)s Değerlendirme:\n                        "
+msgstr ""
+"\n"
+"                            %(assessment_num)s Değerlendirme:\n"
+"                        "
 
 #: templates/legacy/staff_area/oa_student_info_assessment_detail.html:22
 msgid "Assessment Details"
@@ -2069,7 +2400,10 @@ msgid ""
 "\n"
 "                      In Progress (%(current_progress_num)s of %(training_available_num)s)\n"
 "                  "
-msgstr "\n                      İşlem Sürüyor (%(training_available_num)s işlemin%(current_progress_num)s kadarı)\n                  "
+msgstr ""
+"\n"
+"                      İşlem Sürüyor (%(training_available_num)s işlemin%(current_progress_num)s kadarı)\n"
+"                  "
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "available August 13th, 2014 (in 5 days and
@@ -2081,6 +2415,9 @@ msgid ""
 "            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
 msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(start_date)s\" data-string=\"available {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
@@ -2092,6 +2429,9 @@ msgid ""
 "            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
 "            "
 msgstr ""
+"\n"
+"            <span id=\"oa_step_deadline\" class=\"date ora-datetime\" data-datetime=\"%(due_date)s\" data-string=\"due {date} (in %(time_until)s)\" data-timezone=\"%(user_timezone)s\" data-language=\"%(user_language)s\"></span>\n"
+"            "
 
 #: templates/legacy/student_training/student_training.html:58
 #: templates/legacy/student_training/student_training.html:66
@@ -2105,14 +2445,22 @@ msgid ""
 "already assessed. If you select the same options for the response that the "
 "instructor selected, you'll move to the next step. If you don't select the "
 "same options, you'll review the response and try again."
-msgstr "Akranlarınızın cevaplarını değerlendirmeye başlamadan önce, akran değerlendirmelerini nasıl tamamlayacağınızı eğitmenlerin değerlendirdikleri cevapları gözden geçirerek öğreneceksiniz. Eğer cevaplamak için eğitmenin seçtiği seçenekleri seçerseniz, bir sonraki adıma geçersiniz. Eğer aynı seçenekleri seçmezseniz, cevapları gözden geçirip tekrar denemelisiniz."
+msgstr ""
+"Akranlarınızın cevaplarını değerlendirmeye başlamadan önce, akran "
+"değerlendirmelerini nasıl tamamlayacağınızı eğitmenlerin değerlendirdikleri "
+"cevapları gözden geçirerek öğreneceksiniz. Eğer cevaplamak için eğitmenin "
+"seçtiği seçenekleri seçerseniz, bir sonraki adıma geçersiniz. Eğer aynı "
+"seçenekleri seçmezseniz, cevapları gözden geçirip tekrar denemelisiniz."
 
 #: templates/legacy/student_training/student_training.html:69
 msgid ""
 "Your assessment differs from the instructor's assessment of this response. "
 "Review the response and consider why the instructor may have assessed it "
 "differently. Then, try the assessment again."
-msgstr "Bu cevapta sizin değerlendirmeniz eğitmenin değerlendirmesinden farklı. Cevabı gözden geçirin ve eğitmenin neden farklı bir şekilde değerlendirmiş olabileceğini düşünün. Sonra, değerlendirmeyi tekrar deneyin."
+msgstr ""
+"Bu cevapta sizin değerlendirmeniz eğitmenin değerlendirmesinden farklı. "
+"Cevabı gözden geçirin ve eğitmenin neden farklı bir şekilde değerlendirmiş "
+"olabileceğini düşünün. Sonra, değerlendirmeyi tekrar deneyin."
 
 #: templates/legacy/student_training/student_training.html:76
 msgid "The response to the prompt above:"
@@ -2149,6 +2497,8 @@ msgid ""
 "longer continue with this assignment, and you will receive a grade of "
 "Incomplete."
 msgstr ""
+"Bu adım için son tarih geçti. Bu adım artık kapalı. Artık bu ödeve devam "
+"edemezsiniz ve Tamamlanmamış notu alacaksınız."
 
 #: templates/legacy/student_training/student_training_error.html:18
 msgid "Error Loading Learner Training Examples"
@@ -2158,89 +2508,106 @@ msgstr "Öğrenci Eğitim Örneklerini Yüklerken Hata"
 msgid "The Learner Training Step of this assignment could not be loaded."
 msgstr "Öğrenci Eğitim Adımındaki bu görev yüklenemedi."
 
-#: xblock/grade_mixin.py:77 xblock/leaderboard_mixin.py:61
+#: templates/openassessmentblock/base.html:69
+msgid "Loading Open Response Assessment..."
+msgstr "Açık Yanıt Değerlendirmesi Yükleniyor..."
+
+#: xblock/grade_mixin.py:78 xblock/leaderboard_mixin.py:61
 msgid "An unexpected error occurred."
 msgstr "Beklenmeyen bir hata oluştu."
 
-#: xblock/grade_mixin.py:179
+#: xblock/grade_mixin.py:180
 msgid "Peer Assessment"
 msgstr "Akran Değerlendirmesi"
 
-#: xblock/grade_mixin.py:181
+#: xblock/grade_mixin.py:182
 msgid "Self Assessment"
 msgstr "Öz Değerlendirme"
 
-#: xblock/grade_mixin.py:221
+#: xblock/grade_mixin.py:222
 msgid "Assessment feedback could not be saved."
 msgstr "Değerlendirme geri bildirimi kaydedilemedi."
 
-#: xblock/grade_mixin.py:232
+#: xblock/grade_mixin.py:233
 msgid "Feedback saved."
 msgstr "Geri bildiriminiz kaydedildi."
 
-#: xblock/grade_mixin.py:366 xblock/grade_mixin.py:512
+#: xblock/grade_mixin.py:370 xblock/grade_mixin.py:535
 msgid "Staff Comments"
 msgstr "Ekip Yorumları"
 
-#: xblock/grade_mixin.py:372
-msgid "Peer Median Grade"
-msgstr "Akran Ortalama Notu"
-
-#: xblock/grade_mixin.py:377 xblock/grade_mixin.py:519
+#: xblock/grade_mixin.py:383 xblock/grade_mixin.py:542
 #, python-brace-format
 msgid "Peer {peer_index}"
 msgstr "Akran {peer_index}"
 
-#: xblock/grade_mixin.py:378
+#: xblock/grade_mixin.py:384
 msgid "Peer Comments"
 msgstr "Akran Yorumları"
 
-#: xblock/grade_mixin.py:388
+#: xblock/grade_mixin.py:394
 msgid "Self Assessment Grade"
 msgstr "Öz Değerlendirme Notu"
 
-#: xblock/grade_mixin.py:388
+#: xblock/grade_mixin.py:394
 msgid "Your Self Assessment"
 msgstr "Öz-değerlendirmeniz"
 
-#: xblock/grade_mixin.py:389 xblock/grade_mixin.py:531
+#: xblock/grade_mixin.py:395 xblock/grade_mixin.py:554
 msgid "Your Comments"
 msgstr "Yorumunuz"
 
-#: xblock/grade_mixin.py:485
+#: xblock/grade_mixin.py:429
+msgid "Peer Mean Grade"
+msgstr "Akran Ortalama Notu"
+
+#: xblock/grade_mixin.py:430
+msgid "Peer Median Grade"
+msgstr "Akran Ortalama Notu"
+
+#: xblock/grade_mixin.py:508
 msgid "Waiting for peer reviews"
 msgstr "Akran incelemeleri bekleniyor"
 
-#: xblock/grade_mixin.py:524
-msgid "Peer"
-msgstr "Kişi"
-
-#: xblock/grade_mixin.py:655
+#: xblock/grade_mixin.py:677
 msgid "The grade for this problem is determined by your Staff Grade."
-msgstr ""
+msgstr "Bu sorunun notu Personel Notunuza göre belirlenir."
 
-#: xblock/grade_mixin.py:657
-msgid ""
-"The grade for this problem is determined by the median score of your Peer "
-"Assessments."
-msgstr ""
-
-#: xblock/grade_mixin.py:660
+#: xblock/grade_mixin.py:681
 msgid "The grade for this problem is determined by your Self Assessment."
-msgstr ""
+msgstr "Bu problemin notu Kişisel Değerlendirmenize göre belirlenir."
 
-#: xblock/grade_mixin.py:666
+#: xblock/grade_mixin.py:687
 #, python-brace-format
 msgid ""
 "You have successfully completed this problem and received a "
 "{earned_points}/{total_points}."
 msgstr ""
+"Bu sorunu başarıyla tamamladınız ve {earned_points}/{total_points} aldınız."
 
-#: xblock/grade_mixin.py:674
+#: xblock/grade_mixin.py:695
 msgid ""
 "You have not yet received all necessary peer reviews to determine your final"
 " grade."
 msgstr ""
+"Son notunuzu belirlemek için gerekli tüm akran değerlendirmelerini henüz "
+"almadınız."
+
+#: xblock/grade_mixin.py:710
+msgid ""
+"The grade for this problem is determined by the median score of your Peer "
+"Assessments."
+msgstr ""
+"Bu problemin notu Akran Değerlendirmelerinizin ortalama puanına göre "
+"belirlenir."
+
+#: xblock/grade_mixin.py:715
+msgid ""
+"The grade for this problem is determined by the mean score of your Peer "
+"Assessments."
+msgstr ""
+"Bu problemin notu Akran Değerlendirmelerinizin ortalama puanına göre "
+"belirlenir."
 
 #: xblock/openassesment_template_mixin.py:66
 msgid "Peer Assessment Only"
@@ -2256,15 +2623,33 @@ msgstr "Sadece Personel Değerlendirmesi"
 
 #: xblock/openassesment_template_mixin.py:69
 msgid "Self Assessment to Peer Assessment"
-msgstr ""
+msgstr "Akran Değerlendirmesinden Öz Değerlendirmeye"
 
 #: xblock/openassesment_template_mixin.py:70
 msgid "Self Assessment to Staff Assessment"
-msgstr ""
+msgstr "Personel Değerlendirmesinden Öz Değerlendirme"
+
+#: xblock/openassessmentblock.py:1365
+msgid "You can't reset your submission."
+msgstr "Gönderiminizi sıfırlayamazsınız."
+
+#: xblock/openassessmentblock.py:1378
+msgid "The user does not exist."
+msgstr "Kullanıcı mevcut değil."
+
+#: xblock/openassessmentblock.py:1381
+msgid "There is no submission to reset."
+msgstr "Sıfırlanacak bir gönderim yok."
+
+#: xblock/openassessmentblock.py:1383
+msgid "Submission reset successfully."
+msgstr "Gönderim başarıyla sıfırlandı."
 
 #: xblock/rubric_reuse_mixin.py:62
 msgid "You must specify a block id from which to copy a rubric."
 msgstr ""
+"Dereceli puanlama anahtarının kopyalanacağı block kimliğini belirtmeniz "
+"gerekir."
 
 #: xblock/rubric_reuse_mixin.py:66
 msgid "Invalid block id."
@@ -2275,6 +2660,8 @@ msgstr "Geçersiz block kimliği."
 msgid ""
 "No Open Response Assessment found in {course_id} with block id {block_id}"
 msgstr ""
+"{course_id} {block_id} block kimliğine sahip Açık Yanıt Değerlendirmesi "
+"bulunamadı"
 
 #: xblock/staff_area_mixin.py:42
 msgid "You do not have permission to schedule training"
@@ -2296,43 +2683,43 @@ msgstr "ORA öğrenci bilgilerine erişim için izniniz yok."
 msgid "You do not have permission to access ORA staff grading."
 msgstr "ORA görevli notlandırmalarına erişim için izniniz yok."
 
-#: xblock/staff_area_mixin.py:242
+#: xblock/staff_area_mixin.py:241
 msgid "Pending"
 msgstr "Beklemede"
 
-#: xblock/staff_area_mixin.py:243
+#: xblock/staff_area_mixin.py:242
 msgid "Complete/Overwritten"
-msgstr ""
+msgstr "Tamamlandı/Üzerine Yazıldı"
 
-#: xblock/staff_area_mixin.py:246
+#: xblock/staff_area_mixin.py:245
 msgid "Not applicable"
 msgstr "Uygulanamaz"
 
-#: xblock/staff_area_mixin.py:247
+#: xblock/staff_area_mixin.py:246
 msgid "Not submitted"
 msgstr "Gönderilmedi"
 
-#: xblock/staff_area_mixin.py:248
+#: xblock/staff_area_mixin.py:247
 msgid "Submitted"
 msgstr "Girildi"
 
-#: xblock/staff_area_mixin.py:342
+#: xblock/staff_area_mixin.py:341
 msgid "Error getting learner information."
 msgstr "Öğrenci bilgisini alırken hata oluştu."
 
-#: xblock/staff_area_mixin.py:385
+#: xblock/staff_area_mixin.py:384
 msgid "Error loading the checked out learner response."
-msgstr ""
+msgstr "Teslim alınan öğrenci yanıtı yüklenirken hata oluştu."
 
-#: xblock/staff_area_mixin.py:386
+#: xblock/staff_area_mixin.py:385
 msgid "No other learner responses are available for grading at this time."
-msgstr ""
+msgstr "Şu anda not vermek için başka öğrenci yanıtı mevcut değil."
 
-#: xblock/staff_area_mixin.py:388
+#: xblock/staff_area_mixin.py:387
 msgid "Error getting staff grade information."
 msgstr "Personel not bilgisini alırken hata oluştu."
 
-#: xblock/staff_area_mixin.py:409
+#: xblock/staff_area_mixin.py:408
 msgid "Error getting staff grade ungraded and checked out counts."
 msgstr ""
 
@@ -2346,14 +2733,17 @@ msgstr "Gönderim bulunamadı"
 
 #: xblock/staff_area_mixin.py:725
 msgid "Submission for team assignment has no associated team submission"
-msgstr ""
+msgstr "Takım ödevi gönderimine ilişkili bir takım ataması yok"
 
 #: xblock/staff_area_mixin.py:754
 msgid ""
 "The learner submission has been removed from peer assessment. The learner "
 "receives a grade of zero unless you delete the learner's state for the "
 "problem to allow them to resubmit a response."
-msgstr "Öğrenci gönderisi kişi değerlendirme sayfasından kaldırıldı. Eğer siz öğrencinin denemesini sıfırlayıp tekrar cevap göndermesine izin vermezseniz öğrenci sıfır puan alacak."
+msgstr ""
+"Öğrenci gönderisi kişi değerlendirme sayfasından kaldırıldı. Eğer siz "
+"öğrencinin denemesini sıfırlayıp tekrar cevap göndermesine izin vermezseniz "
+"öğrenci sıfır puan alacak."
 
 #: xblock/staff_area_mixin.py:789
 msgid ""
@@ -2361,31 +2751,40 @@ msgid ""
 "grade of zero unless you delete a team member’s state for the problem to "
 "allow the team to resubmit a response."
 msgstr ""
+"Takımın gönderimi notlandırmadan kaldırıldı. Ekibin yeniden yanıt "
+"göndermesine olanak sağlamak amacıyla bir ekip üyesinin sorunla ilgili "
+"durumunu silmediğiniz sürece ekip sıfır notu alır."
 
-#: xblock/studio_mixin.py:243 xblock/studio_mixin.py:255
+#: xblock/studio_mixin.py:247 xblock/studio_mixin.py:259
 msgid "Error updating XBlock configuration"
 msgstr "XBlock yapılandırması güncellenirken hata"
 
-#: xblock/studio_mixin.py:260
-msgid "Error: Text Response and File Upload Response cannot both be disabled"
-msgstr "Hata: Metin ve Dosya Yükleme yanıtlarının ikisi birden devre dışı bırakılamaz"
-
 #: xblock/studio_mixin.py:264
+msgid "Error: Text Response and File Upload Response cannot both be disabled"
+msgstr ""
+"Hata: Metin ve Dosya Yükleme yanıtlarının ikisi birden devre dışı "
+"bırakılamaz"
+
+#: xblock/studio_mixin.py:268
 msgid ""
 "Error: When Text Response is disabled, File Upload Response must be Required"
-msgstr "Hata: Metin Yanıtı devre dışı bırakıldığında, Dosya Yükleme Yanıtı Gerekli Olmalıdır"
+msgstr ""
+"Hata: Metin Yanıtı devre dışı bırakıldığında, Dosya Yükleme Yanıtı Gerekli "
+"Olmalıdır"
 
-#: xblock/studio_mixin.py:267
+#: xblock/studio_mixin.py:271
 msgid ""
 "Error: When File Upload Response is disabled, Text Response must be Required"
-msgstr "Hata: Dosya Yükleme Yanıtı devre dışı bırakıldığında, Metin Yanıtı Gerekli Olmalıdır"
+msgstr ""
+"Hata: Dosya Yükleme Yanıtı devre dışı bırakıldığında, Metin Yanıtı Gerekli "
+"Olmalıdır"
 
-#: xblock/studio_mixin.py:291
+#: xblock/studio_mixin.py:295
 #, python-brace-format
 msgid "Validation error: {error}"
 msgstr "Doğrulama hatası: {error}"
 
-#: xblock/studio_mixin.py:323
+#: xblock/studio_mixin.py:329
 msgid "Successfully updated OpenAssessment XBlock"
 msgstr "OpenAssessment XBlock başarıyla yüklendi."
 
@@ -2395,18 +2794,20 @@ msgstr "Değerlendirme için gerekli seçenekleri sağlamalısınız."
 
 #: xblock/utils/data_conversion.py:318
 msgid "You must provide overall feedback in the assessment."
-msgstr ""
+msgstr "Değerlendirmede genel geri bildirim sağlamalısınız."
 
 #: xblock/utils/data_conversion.py:321
 msgid "You must provide feedback for criteria in the assessment."
-msgstr ""
+msgstr "Değerlendirmedeki kriterlere ilişkin geri bildirim sağlamalısınız."
 
 #: xblock/utils/resolve_dates.py:52
 #, python-brace-format
 msgid ""
 "'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
 "MM-DDTHH:MM:SS."
-msgstr "'{date}' geçersiz tarih formatı. Tarih formatının GG-AA-YYYY SA:DK:SN olduğundan emin olun."
+msgstr ""
+"'{date}' geçersiz tarih formatı. Tarih formatının GG-AA-YYYY SA:DK:SN "
+"olduğundan emin olun."
 
 #: xblock/utils/resolve_dates.py:57
 #, python-brace-format
@@ -2418,106 +2819,125 @@ msgstr "'{date}' tarih dizgesi ya da tarih zamanı olmalı"
 msgid ""
 "This step's start date '{start}' cannot be earlier than the previous step's "
 "start date '{prev}'."
-msgstr "Bu adımın başlangıç tarihi '{start}', önceki adımın başlangıç tarihinden '{prev}' önce olamaz"
+msgstr ""
+"Bu adımın başlangıç tarihi '{start}', önceki adımın başlangıç tarihinden "
+"'{prev}' önce olamaz"
 
 #: xblock/utils/resolve_dates.py:218
 #, python-brace-format
 msgid ""
 "This step's due date '{due}' cannot be later than the next step's due date "
 "'{prev}'."
-msgstr "Bu adımın son tarihi '{due}' sonraki adımın son tarihi '{prev}'den sonra olamaz."
+msgstr ""
+"Bu adımın son tarihi '{due}' sonraki adımın son tarihi '{prev}'den sonra "
+"olamaz."
 
 #: xblock/utils/resolve_dates.py:234
 #, python-brace-format
 msgid "The start date '{start}' cannot be later than the due date '{due}'"
 msgstr "Başlangıç tarihi '{start}' son tarih '{due}'den sonra olamaz."
 
-#: xblock/utils/validation.py:118
+#: xblock/utils/validation.py:120
 msgid "This problem must include at least one assessment."
 msgstr "Bu sorun en azından bir değelendirme içermelidir."
 
-#: xblock/utils/validation.py:122
+#: xblock/utils/validation.py:124
 msgid "The assessment order you selected is invalid."
 msgstr "Seçtiğiniz değerlendirme sırası geçersiz."
 
-#: xblock/utils/validation.py:132
+#: xblock/utils/validation.py:134
 msgid "In peer assessment, the \"Must Grade\" value must be a positive integer."
-msgstr "Eş değerlendirmede, \"Puanlandırılmalı\" değeri pozitif tam sayı olmalıdır."
+msgstr ""
+"Eş değerlendirmede, \"Puanlandırılmalı\" değeri pozitif tam sayı olmalıdır."
 
-#: xblock/utils/validation.py:135
+#: xblock/utils/validation.py:137
 msgid "In peer assessment, the \"Graded By\" value must be a positive integer."
 msgstr "Eş değerlendirmede, \"Puanlandıran\" değeri pozitif tam sayı olmalıdır."
 
-#: xblock/utils/validation.py:139
+#: xblock/utils/validation.py:141
 msgid ""
 "In peer assessment, the \"Must Grade\" value must be greater than or equal "
 "to the \"Graded By\" value."
-msgstr "Eş değerlendirmede, \"Puanlandırılmalı\" değeri \"Puanlandırılan\" değerinden büyük ya da eşit olmalıdır."
+msgstr ""
+"Eş değerlendirmede, \"Puanlandırılmalı\" değeri \"Puanlandırılan\" "
+"değerinden büyük ya da eşit olmalıdır."
 
-#: xblock/utils/validation.py:148
+#: xblock/utils/validation.py:150
 msgid "You must provide at least one example response for learner training."
 msgstr "Öğrenci eğitimi için en az bir örnek cevap sağlamalısınız."
 
-#: xblock/utils/validation.py:151
+#: xblock/utils/validation.py:153
 msgid "Each example response for learner training must be unique."
 msgstr "Öğrenci eğitimi için olan her örnek cevap eşsiz olmalıdır."
 
-#: xblock/utils/validation.py:158
+#: xblock/utils/validation.py:160
 msgid "The \"required\" value must be true if staff assessment is the only step."
-msgstr ""
+msgstr "Personel değerlendirmesi tek adımsa \"required\" değeri true olmalıdır."
 
-#: xblock/utils/validation.py:162
+#: xblock/utils/validation.py:164
 msgid ""
 "The number of assessments cannot be changed after the problem has been "
 "released."
 msgstr "Problem yayımlandıktan sonra değerlendirme sayısı değiştirilemez. "
 
-#: xblock/utils/validation.py:167
+#: xblock/utils/validation.py:169
 msgid ""
 "The assessment type cannot be changed after the problem has been released."
 msgstr "Problem yayımlandıktan sonra değerlendirme tipi değiştirilemez."
 
-#: xblock/utils/validation.py:190
+#: xblock/utils/validation.py:176
+msgid ""
+"The grading strategy for peer assessments cannot be changed after the "
+"problem has been released."
+msgstr ""
+"Akran değerlendirmelerine yönelik derecelendirme stratejisi, problem "
+"yayınlandıktan sonra değiştirilemez."
+
+#: xblock/utils/validation.py:200
 msgid "This rubric definition is not valid."
 msgstr "Bu rubrik tanımı geçerli değil."
 
-#: xblock/utils/validation.py:196
+#: xblock/utils/validation.py:203
+msgid "You must provide at least one prompt."
+msgstr "En az bir prompt sağlamalısınız."
+
+#: xblock/utils/validation.py:209
 #, python-brace-format
 msgid "Options in '{criterion}' have duplicate name(s): {duplicates}"
 msgstr "'{criterion}'daki seçenekler yinelenen isim(ler)e sahip: {duplicates}"
 
-#: xblock/utils/validation.py:204
+#: xblock/utils/validation.py:217
 msgid "Criteria with no options must require written feedback."
 msgstr "Seçenekleri olmayan kriterler yazılı geri bildirim gerektirir."
 
-#: xblock/utils/validation.py:213
+#: xblock/utils/validation.py:226
 msgid "Prompts cannot be created or deleted after a problem is released."
 msgstr "Problem yayımlandıktan sonra komutlar oluşturulamaz ve silinemez."
 
-#: xblock/utils/validation.py:217
+#: xblock/utils/validation.py:230
 msgid "The number of criteria cannot be changed after a problem is released."
 msgstr "Problem yayımlandıktan sonra kriter sayısı değiştirilemez."
 
-#: xblock/utils/validation.py:230
+#: xblock/utils/validation.py:243
 msgid "Criteria names cannot be changed after a problem is released"
 msgstr "Problem yayımlandıktan sonra kriter isimleri değiştirilemez."
 
-#: xblock/utils/validation.py:235
+#: xblock/utils/validation.py:248
 msgid "The number of options cannot be changed after a problem is released."
 msgstr "Problem yayımlandıktan sonra seçeneklerin sayısı değiştirilemez."
 
-#: xblock/utils/validation.py:240
+#: xblock/utils/validation.py:253
 msgid "Point values cannot be changed after a problem is released."
 msgstr "Problem yayımlandıktan sonra nokta değerleri değiştirilemez."
 
-#: xblock/utils/validation.py:291
+#: xblock/utils/validation.py:304
 msgid "Learner training must have at least one training example."
-msgstr ""
+msgstr "Öğrenci eğitiminde en az bir eğitim örneği bulunmalıdır."
 
-#: xblock/utils/validation.py:356
+#: xblock/utils/validation.py:369
 msgid "Leaderboard number is invalid."
 msgstr "Afiş sayısı geçersiz."
 
-#: xblock/utils/validation.py:379
+#: xblock/utils/validation.py:392
 msgid "The submission format is invalid."
 msgstr "Gönderi formatı geçersiz."
