@@ -68,7 +68,7 @@ msgstr ""
 
 #: assessment/score_type_constants.py:22
 msgid "Self"
-msgstr ""
+msgstr "Önértékelés"
 
 #: assessment/score_type_constants.py:23
 msgid "Staff"
