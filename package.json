@@ -1,7 +1,7 @@
 {
   "name": "edx-ora2",
   "version": "6.17.0",
-  "repository": "https://github.com/openedx/edx-ora2.git",
+  "repository": "https://github.com/sysagnostic/edx-ora2.git",
   "dependencies": {
     "@edx/frontend-build": "8.0.6",
     "@openedx/paragon": "^21.5.7",
